@@ -1,0 +1,97 @@
+/* Start Hero */
+.hero {
+    margin-top: 180px;
+    margin-bottom: 120px
+}
+/* End Hero */
+/* Start Partners */
+.companies-grid {
+    margin-bottom: 120px;
+}
+
+.companies-grid .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    flex-direction: column
+}
+
+.companies-grid .company-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.company-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.companies-grid .company-card .company-image img {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.companies-grid .company-card .company-image,
+.companies-grid .company-card .content {
+    width: 50%;
+}
+
+.companies-grid .company-card .content .company-header .company-name {
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.companies-grid .company-card .content .company-description {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-bottom: 32px;
+}
+
+.companies-grid .company-card .content .company-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.companies-grid .company-card .content .company-footer a,
+.companies-grid .company-card .content .company-footer i {
+    background: var(--linear, linear-gradient(90deg, #082177 0.08%, #E8009E 99.44%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Media Queries */
+/* 991px */
+@media (max-width: 991px) {
+    .companies-grid .company-card {
+        flex-direction: column
+    }
+    .companies-grid .company-card .company-image,
+    .companies-grid .company-card .content {
+        width: 100%;
+    }
+}
+
+/* 767px */
+@media (max-width: 767px) {
+    .companies-grid .company-card .content .company-header .company-name {
+        font-size: 24px;
+    }
+    .companies-grid .company-card .content .company-description {
+        font-size: 16px;
+    }
+    .companies-grid .company-card .content .company-footer a, .companies-grid .company-card .content .company-footer i {
+        font-size: 17px;
+    }
+}
+/* End Partners */

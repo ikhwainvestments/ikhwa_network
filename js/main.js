@@ -1,6 +1,6 @@
 /*
 Author: Zaki Abed
-Project Name: Modalst
+Project Name: IKHWA DIGITAL
 ------------------------------------------------
 Table of Content:
 1. Mobile menu and language dropdown toggle
@@ -12,7 +12,6 @@ Table of Content:
 /* 1. Mobile menu and language dropdown */
 /* ------------------------------ */
 document.addEventListener('DOMContentLoaded', function () {
-    // القائمة المتنقلة
     const mobileMenu = document.querySelector('.mobile-menu');
     const navToggle = document.querySelector('.btn-show-nav');
     const navLinks = mobileMenu.querySelectorAll('a');
@@ -53,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
 
-    // تفعيل القائمة المنسدلة لتغيير اللغة
     const langDropdown = document.querySelector('.lang-dropdown');
     const langBtn = document.querySelector('.lang-btn');
     const langMenu = document.querySelector('.lang-menu');

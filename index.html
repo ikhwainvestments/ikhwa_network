@@ -1,229 +1,500 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Modalst يتيح لك الانضمام إلى منصتنا كتاجر، انتظر الموافقة على طلبك وابدأ بعرض منتجاتك بسهولة في متجرنا الرقمي.">
-  <meta name="keywords" content="تجار, تسجيل التجار, انتظار الموافقة, بيع إلكتروني, منصة Modalst, متجر إلكتروني, تسجيل بائع">
-  <meta name="author" content="Modalst">
-  <link rel="icon" href="image/launcher_icon.png" sizes="32x32"/>
-  <title>Modalst | تميزي بإطلالتك الفريدة</title>
-  <!-- Normalize.css: Resets default browser styles for consistency -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <!-- FontAwesome: Icon library for various UI elements -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- Bootstrap: Grid framework and responsive utilities -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- AOS: Animate On Scroll library for scroll animations -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <!-- intlTelInput: Library for international phone number input with country flags -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.14/css/intlTelInput.css">
-  <!-- Main Stylesheet: Main custom styles for the website -->
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="إخوة ديجيتال شركة مغربية تابعة لمجموعة إخوة نتوورك، متخصصة في تطوير وإدارة المواقع الإلكترونية والتسويق الرقمي. بفضل خبرة تتجاوز 20 عامًا، نخدم زبناءنا داخل المغرب وخارجه، وملتزمون بتقديم أفضل الحلول الرقمية.">
+    <meta name="keywords" content="إخوة ديجيتال، تطوير مواقع المغرب، التسويق الرقمي المغرب، إدارة المواقع، تصميم المواقع، إخوة نتوورك، البرمجة، تحسين محركات البحث، حلول رقمية، بناء الهوية البصرية">
+    <meta name="author" content="فريق إخوة ديجيتال">
+    <title>إخوة ديجيتال | خبراء مغاربة في تطوير المواقع والتسويق الرقمي</title>
+    <link rel="icon" href="image/white-logo.svg" sizes="32x32"/>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <!-- Header -->
-  <div class="header" id="header">
-    <div class="container">
-      <a class="logo" href="index.html">
-        <img src="image/logo.png" alt="Modalst">
-      </a>
-      <a href="ar/merchant-waiting.html" class="btn-primary d-block d-sm-none">إنضم الينا كتاجر</a>
-      <a href="#" class="btn-secondary d-block d-sm-none">تسجيل دخول</a>
-      <div class="mobile-menu">
-        <ul class="main-nav">
-          <li><a href="index.html" class="nav-home active">الرئيسية</a></li>
-          <li><a href="index.html#about" class="nav-about">حولنا</a></li>
-          <li><a href="index.html#contact" class="nav-contact">تواصل معنا</a></li>
+<!-- Header -->
+<div class="header" id="header">
+  <div class="container">
+    <!-- Logo -->
+    <a class="logo" href="index.html">
+      <img src="image/logo.png" alt="IKHWA DIGITAL Logo" class="logo-img">
+    </a>
+
+    <div class="mobile-menu">
+    <!-- links  -->
+      <ul class="main-nav">
+        <li><a href="index.html" class="nav-home active">الصفحة الرئيسية</a></li>
+        <li><a href="index.html#about" class="nav-about">من نحن</a></li>
+        <li><a href="index.html#services" class="nav-services">خدماتنا</a></li>
+        <li><a href="index.html#faq" class="nav-faq">الأسئلة الشائعة</a></li>
+        <li><a href="production.html" class="nav-production">الإنتاج</a></li>
+        <li><a href="partners.html" class="nav-partners">شركاؤنا</a></li>
+        <li><a href="index.html#contact" class="nav-contact">اتصل بنا</a></li>
+      </ul>
+
+      <!-- language dropdown -->
+      <div class="lang-dropdown">
+        <button class="lang-btn">
+          <i class="fa-solid fa-globe"></i>
+          <span>English</span>
+        </button>
+        <ul class="lang-menu">
+          <li><a href="#" onclick="setLanguage('ar')">العربية (AR)</a></li>
+          <li><a href="en/index.html" onclick="setLanguage('en')">English (EN)</a></li>
+          <li><a href="fr/index.html" onclick="setLanguage('fr')">Franch (FR)</a></li>
         </ul>
-        <div class="auth-links">
-          <!--  -->
-          <a href="ar/merchant-waiting.html" class="btn-primary d-none d-sm-block">إنضم الينا كتاجر</a>
-          <a href="#" class="btn-secondary d-none d-sm-block">تسجيل دخول</a>
-        </div>
-        <div class="lang-dropdown">
-          <button class="lang-btn">
-            <i class="fa-solid fa-globe"></i> <span>English</span>
-          </button>
-          <ul class="lang-menu">
-            <li><a href="#" onclick="setLanguage('ar')">العربية (AR)</a></li>
-            <li><a href="en/index.html" onclick="setLanguage('en')">English (EN)</a></li>
-          </ul>
-        </div>
       </div>
-      <i class="fa fa-bars btn-show-nav"></i>
     </div>
+
+    <i class="fa fa-bars btn-show-nav"></i>
   </div>
-  <!-- / Header -->
-  <!-- Hero -->
-  <section class="hero">
+</div>
+<!-- / Header -->
+<!-- Hero -->
+<div class="hero" id="hero">
     <div class="container">
-      <div class="hero-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-        <h1>
-          أناقتكِ تبدأ من <span>Modalst</span>، اكتشفي عالمًا من الأناقة والجمال مع أحدث
-          <span>صيحات <span>الموضة</span></span>
-        </h1>
-        <p>
-          استمتعي بتجربة تسوق فريدة، حيث الجودة تلتقي بالأناقة، لتجدي كل ما يُكمل أسلوبكِ المميز،
-          من التصاميم العصرية إلى القطع الكلاسيكية، نوفر لكِ كل ما تحتاجينه لإطلالة جذابة تعكس ثقتكِ بنفسكِ.
-        </p>
-        <div class="hero-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-          <a href="#" class="btn google-play">
-            تنزيل بواسطة Google Play
-            <img src="image/google-play.png" alt="Google Play">
-          </a>
-          <a href="#" class="btn app-store">
-            تنزيل بواسطة App Store
-            <img src="image/app-store.png" alt="App Store">
-          </a>
+        <div class="hero-content">
+            <h2 class="gradient-text">إخوة ديجيتال</h2>
+            <h1>لنصنع معاً الفضاء الرقمي الذي تستحقه</h1>
         </div>
-      </div>
-      <div class="hero-images">
-        <img src="image/phone1.png" class="phone phone-1" alt="App Screenshot" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
-        <img src="image/phone2.png" class="phone phone-2" alt="App Screenshot" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
-      </div>
-    </div>
-  </section>
-  <!-- / Hero -->
-  <!-- About -->
-  <section class="about-section" id="about">
-    <div class="container">
-      <div class="text-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-        <h2>مـــن نحــن؟</h2>
-        <p>
-          Modalst هو وجهتكِ الأولى للأناقة العصرية، حيث نحرص على تقديم أحدث صيحات الموضة التي تعكس جمالكِ وتمنحكِ إطلالة مميزة في كل مناسبة. 
-          يجمع متجرنا بين التصاميم الراقية، الجودة العالية، واللمسات العصرية لتجدي كل ما يعبر عن أسلوبكِ الفريد.
-        </p>
-        <p>
-          نؤمن بأن الموضة ليست مجرد ملابس، بل أسلوب حياة، لذلك نختار لكِ بعناية أجمل القطع التي تجمع بين الأناقة والراحة، لتظهري بثقة في كل لحظة.
-          تسوقي الآن واستمتعي بتجربة فريدة تجمع بين التميز، الفخامة، والتنوع!
-        </p>
-      </div>
-      <div class="image-content">
-        <img src="image/phone3.png" alt="صورة التطبيق" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
-      </div>
-    </div>
-  </section>
-  <!-- / About -->
-  <!-- Contact Us -->
-  <section class="contact-section" id="contact">
-    <div class="container" data-aos="fade-up" data-aos-duration="1000">
-      <h2 data-aos="fade-down" data-aos-duration="1000">تواصل معنا</h2>
-      <p data-aos="fade-up" data-aos-duration="1200">
-        للحصول على المزيد من المعلومات حول خدماتنا ومنتجاتنا أو لتقديم شكوى يرجى التواصل معنا عبر ملء الإستمارة الآتية
-      </p>
-      <form class="contact-form">
-        <div class="row">
-          <div data-aos="fade-right" data-aos-duration="1200">
-            <label for="name">الاسم الكامل</label>
-            <input type="text" placeholder="أدخل اسمك" required>
-          </div>
-          <div data-aos="fade-left" data-aos-duration="1200">
-            <label for="email">البريد الإلكتروني</label>
-            <input type="email" placeholder="أدخل البريد الإلكتروني" required>
-          </div>
-        </div>
-        <div class="input-group" data-aos="fade-up" data-aos-duration="1200">
-          <label for="subject">الموضوع</label>
-          <input type="text" placeholder="أدخل اسم الموضوع" required>
-        </div>
-        <div class="input-group" data-aos="fade-up" data-aos-duration="1300">
-          <label for="message">المحتوى</label>
-          <textarea placeholder="أدخل الوصف..." required></textarea>
-        </div>
-        <button type="submit" data-aos="zoom-in" data-aos-duration="1400">إرسال</button>
-      </form>
-    </div>
-  </section>
-  <!-- / Contact Us -->
-  <!-- Footer -->
-  <footer>
-    <div class="container" data-aos="fade-up" data-aos-duration="1000">
-        <div class="footer-column" data-aos="fade-right" data-aos-duration="1200">
-            <img src="image/logo.png" alt="Modalst Logo" class="logo">
-            <p><i class="fas fa-map-marker-alt"></i> الكويت - الجابرية - block 10 - شارع 5</p>
-            <p><i class="fas fa-phone"></i> +96599996086</p>
-            <p><i class="fas fa-envelope"></i> modalst@hotmail.com</p>
-            <div class="app-buttons" data-aos="zoom-in" data-aos-duration="1400">
-                <a href="#" class="btn google-play">
-                    تنزيل بواسطة Google Play
-                    <img src="image/google-play.png" alt="Google Play">
-                </a>
-                <a href="#" class="btn app-store">
-                    تنزيل بواسطة App Store
-                    <img src="image/app-store.png" alt="App Store">
-                </a>
+        <div class="statistic">
+            <div class="content">
+                <div class="statistic-item">
+                    <h2>50+</h2>
+                    <p>مشروع تم تسليمه</p>
+                </div>
+                <div class="statistic-item">
+                    <h2>20+</h2>
+                    <p>عملاء راضون</p>
+                </div>
+                <div class="statistic-item">
+                    <h2>4+</h2>
+                    <p>دول تغطيها خدماتنا</p>
+                </div>
             </div>
         </div>
-        <div class="footer-column" data-aos="fade-left" data-aos-duration="1200">
+    </div>
+</div>
+<!-- / Hero -->
+<!-- About Us -->
+<div class="about" id="about">
+    <div class="container">
+        <div class="about-content">
+            <h2 class="gradient-text">من نحن</h2>
+            <h1>
+                مركز الحلول الرقمية المبتكرة 
+            </h1>
+            <p>
+                إخوة ديجيتال شركة مغربية تندرج ضمن مجموعة شركات إخوة نتوورك، تهتم بمجال البرمجة وتسيير المواقع الإلكترونية بفضل فريق متخصص في تقنيات التصميم والتسويق الرقمي راكم تجربة تفوق 20 سنة في هذا المجال.
+            </p>
+            <p>
+                استطعنا بفضل هذه التجربة توسيع مجال معاملاتنا داخل المغرب وخارجه في عدة دول عربية وأجنبية، وحملنا على عاتقنا تحدي الريادة في تقديم الخدمات لزبنائنا ونؤمن جيدا أن ثروتنا الحقيقية هي إرضاء تطلعاتهم.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="image/about.svg" alt="About Us Image">
+        </div>
+    </div>
+
+</div>
+<!-- / About Us -->
+<!-- Start Services -->
+<!-- Start Services -->
+<section class="services-section" id="services">
+    <div class="container">
+        <h2 class="gradient-text">خدماتنا التقنية والتسويقية</h2>
+        <p class="section-description">
+            تقديم برامج ومنصات رقمية تعمل على تعزيز الإستراتيجية المعلوماتية للشركات وتطوير مجال معاملاتهم التجارية
+        </p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="image/services/branding-icon.png" alt="الهوية التجارية" class="service-icon">
+                <h4 class="service-title">الهوية التجارية</h4>
+                <p class="service-description">
+                    نضمن لزبنائنا هوية رقمية متكاملة وخدمات تقنية عالية الجودة من الفكرة إلى التصميم الجرافيكي
+                </p>
+            </div>
+
+            <div class="service-card">
+                <img src="image/services/marketing-icon.png" alt="التسويق" class="service-icon">
+                <h4 class="service-title">التسويق</h4>
+                <p class="service-description">
+                    نعزز حضوركم الرقمي بفضل تحربتنا في التصوير، الإنتاج وصياغة المحتوى وكذا إدارة صفحات التواصل الاجتماعي
+                </p>
+            </div>
+
+            <div class="service-card">
+                <img src="image/services/app-icon.png" alt="برمجة التطبيقات" class="service-icon">
+                <h4 class="service-title">برمجة التطبيقات</h4>
+                <p class="service-description">
+                    إعداد برامج معلوماتية وتطبيقات هاتفية عالية الجودة مرفوقة بأنظمة أمان فعالة وخدمات تقنية وإدارية
+                </p>
+            </div>
+
+            <div class="service-card">
+                <img src="image/services/graphics-icon.png" alt="التصوير الفوتوغرافي والإخراج" class="service-icon">
+                <h4 class="service-title">التصوير الفوتوغرافي والإخراج</h4>
+                <p class="service-description">
+                    نهدف إلى إنتاج محتوى بصري احترافي يعكس تطلعاتكم بجودة عالية يترجم رغبة الزبون و يلبي حاجيات المتلقي
+                </p>
+            </div>
+
+            <div class="service-card">
+                <img src="image/services/web-icon.png" alt="برمجة وتصميم المواقع الإلكترونية" class="service-icon">
+                <h4 class="service-title">برمجة وتصميم المواقع الإلكترونية</h4>
+                <p class="service-description">
+                    نقوم بتصميم وتطوير مواقع ويب مخصصة مع إدارة كاملة ، من الصفحات المقصودة إلى التجارة الإلكترونية.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <img src="image/services/social-icon.png" alt="تصميم محتوى التواصل الاجتماعي" class="service-icon">
+                <h4 class="service-title">تصميم محتوى التواصل الاجتماعي</h4>
+                <p class="service-description">
+                    نؤمن لزبوننا حضورا قويا لعلامته التجارية على منصات التواصل الاجتماعي ونساهم في رفع مستوى التفاعل على صفحته.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Services -->
+<!-- Start Why Choose Us -->
+<section class="why-choose-us-section" id="why-choose-us">
+    <div class="container">
+        <h2 class="gradient-text">لماذا تختارنا؟</h2>
+        <p class="section-description">
+            إخوة ديجيتال ستكون الخيار الأنسب لصناعة محتواكم الرقمي ورفع رقم معاملاتكم التجارية , نحن شريكك الدائم في عالم رقمي أكثر تطورا
+        </p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="image/why_choose_us/team-icon.png" alt="فريقنا">
+                </div>
+                <div class="feature-content">
+                    <h4 class="feature-title">فريقنا</h4>
+                    <p class="feature-description">
+                        فريق مهني محترف ومنفتخ على كفاءات محلية وأجنبية
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="image/why_choose_us/vision-icon.png" alt="رؤيتنا">
+                </div>
+                <div class="feature-content">
+                    <h4 class="feature-title">رسالتنا وقيمنا</h4>
+                    <p class="feature-description">
+                        إرضاء زبنائنا وتوسيع مجال معاملاتهم ليصبحوا روادا في مجال التسويق
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="image/why_choose_us/mission-icon.png" alt="رسالتنا وقيمنا">
+                </div>
+                <div class="feature-content">
+                    <h4 class="feature-title">رسالتنا وقيمنا</h4>
+                    <p class="feature-description">
+                        إدارة رقمية مميزة وحرفية لمشاريعك، الأمانة والإلتزام أساس تعاقدنا
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Why Choose Us -->
+<!-- Start Partners -->
+<section class="partners-section" id="partners">
+    <div class="container">
+        <h3 class="gradient-text">شركاؤنا</h3>
+        <p class="section-description">
+            هم دعم حقيقي لنا ولزبنائنا،نسعى دائما لخلق جو من التعاون وتبادل الخبرات لإنجاح مشاريع عملائنا وتقوية تواجدهم في سوق المعاملات التجارية
+        </p>
+
+        <div class="partners-logos">
+            <div class="partner-logo">
+                <img src="image/partners/ikhwa_network.png" alt="شبكة إخوة">
+            </div>
+            <div class="partner-logo">
+                <img src="image/partners/ihkwa_invesments.png" alt="أخوة للاستثمارات">
+            </div>
+            <div class="partner-logo">
+                <img src="image/partners/karihome.png" alt="كايروهوم">
+            </div>
+            <div class="partner-logo">
+                <img src="image/partners/boklite.png" alt="بوكليت">
+            </div>
+            <div class="partner-logo">
+                <img src="image/partners/artyads.png" alt="آرتي آدز">
+            </div>
+            <div class="partner-logo">
+                <img src="image/partners/karilive.png" alt="كاريلاف">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Partners -->
+<!-- Start FAQ -->
+<section class="faq-section" id="faq">
+    <div class="container">
+        <div class="faq-header">
+            <h3 class="gradient-text">الاستفسارات والأسئلة</h3>
+            <h2 class="section-description">الأسئلة المتداولة (FAQ)</h2>
+            <p class="section-subdescription">
+                نحن نقدم مجمعة من الإجابات على الأسئلة الأكثر شيوعا حول الشركة.
+            </p>
+        </div>
+
+        <div class="faq-content">
+            <!-- FAQ Item -->
+            <div class="faq-item active">
+                <div class="faq-question">
+                    <span class="gradient-text faq-number">01</span>
+                    <h4>ما هو إخوة ديجيتال الرقمية؟</h4>
+                    <i class="fa-solid fa-chevron-up icon-rotate"></i>
+                </div>
+                <div class="faq-answer">
+                    إخوة ديجيتال هي شركة رقمية مغربية تأسست عام 2024، مع فريق متخصص في التكنولوجيا والتصميم، نحن ندعم مفاهيم الأعمال ونقدم برامج وحلول تسويقية مخصصة لصحة العلامات وتطوير الإستراتيجيات الرقمية بما يتناسب مع تطلعات زبائننا.
+                </div>
+            </div>
+            <!-- FAQ Item -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span class="gradient-text faq-number">01</span>
+                    <h4>ما هو إخوة ديجيتال الرقمية؟</h4>
+                    <i class="fa-solid fa-chevron-up icon-rotate"></i>
+                </div>
+                <div class="faq-answer">
+                    إخوة ديجيتال هي شركة رقمية مغربية تأسست عام 2024، مع فريق متخصص في التكنولوجيا والتصميم، نحن ندعم مفاهيم الأعمال ونقدم برامج وحلول تسويقية مخصصة لصحة العلامات وتطوير الإستراتيجيات الرقمية بما يتناسب مع تطلعات زبائننا.
+                </div>
+            </div>
+            <!-- FAQ Item -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span class="gradient-text faq-number">01</span>
+                    <h4>ما هو إخوة ديجيتال الرقمية؟</h4>
+                    <i class="fa-solid fa-chevron-up icon-rotate"></i>
+                </div>
+                <div class="faq-answer">
+                    إخوة ديجيتال هي شركة رقمية مغربية تأسست عام 2024، مع فريق متخصص في التكنولوجيا والتصميم، نحن ندعم مفاهيم الأعمال ونقدم برامج وحلول تسويقية مخصصة لصحة العلامات وتطوير الإستراتيجيات الرقمية بما يتناسب مع تطلعات زبائننا.
+                </div>
+            </div>
+            <!-- FAQ Item -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span class="gradient-text faq-number">01</span>
+                    <h4>ما هو إخوة ديجيتال الرقمية؟</h4>
+                    <i class="fa-solid fa-chevron-up icon-rotate"></i>
+                </div>
+                <div class="faq-answer">
+                    إخوة ديجيتال هي شركة رقمية مغربية تأسست عام 2024، مع فريق متخصص في التكنولوجيا والتصميم، نحن ندعم مفاهيم الأعمال ونقدم برامج وحلول تسويقية مخصصة لصحة العلامات وتطوير الإستراتيجيات الرقمية بما يتناسب مع تطلعات زبائننا.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End FAQ -->
+<!-- Start Contact -->
+<section class="contact-section" id="contact">
+    <div class="container">
+        <div class="faq-header">
+            <h3 class="gradient-text">اتصل بنا </h3>
+            <p class="section-description">
+                لمزيد من المعلومات حول خدماتنا ومنتجاتنا أو لتقديم شكوى، يرجى التواصل معنا عن طريق ملء النموذج     
+            </p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-form">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="الاسم">
+                    </div>
+                      <div class="mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="البريد الإلكتروني">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="phone" placeholder="رقم الهاتف">
+                    </div>
+                    <div class="mb-3 file-upload" for="file">
+                        <label for="file">
+                            <i class="fa-solid fa-file"></i>
+                            يرجى إرفاق ملف لا يزيد حجمه عن 2 ميجابايت بأحد التنسيقات التالية: .jpg, .jpeg, .png, .pdf, .xlsx, .docx
+                        </label>
+                        <input class="form-control" type="file" id="file">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="description" rows="3" placeholder="الوصف"></textarea>
+                        </div>         
+                    <div class="contact-options">
+                        <div class="form-check">
+                            <label class="form-check-label custom-radio" for="radio1">
+                                <input class="form-check-input" type="radio" id="radio1" name="1">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label for="radio1">استفسار</label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label custom-radio" for="radio2">
+                                <input class="form-check-input" type="radio" id="radio2" name="1">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label for="radio2">اقتراح</label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label custom-radio" for="radio3">
+                                <input class="form-check-input" type="radio" id="radio3" name="1">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label for="radio3">شكوى</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">إرسال</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="contact-text">
+                        <h5 class="fw-semibold">رقم الهاتف</h5>
+                        <p>+96654775155</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div class="contact-text">
+                        <h5 class="fw-semibold">WhatsApp</h5>
+                        <p>+96654775155</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="contact-text">
+                        <h5 class="fw-semibold">البريد الإلكتروني</h5>
+                        <p>Example@email.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact -->
+<!-- Start Map -->
+<section class="map-section">
+    <div class="container">
+        <div class="map-header">
+            <h3 class="gradient-text">عرض موقعنا</h3>
+            <p class="section-description">
+                مقرنا الرئيسي موضح بالخريطة التالية
+            </p>
+        </div>
+        <div id="map"></div>
+    </div>
+</section>
+<!-- End Map -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-column">
+            <img src="image/white-logo.svg" alt="IKHWA DIGITAL Logo" class="logo">
+        </div>
+        <div class="footer-column">
+            <h3>معلومات الشركة</h3>
+            <div class="text">
+                <p>
+                    إخوة ديجيتال شركة مغربية تندرج ضمن مجموعة شركات إخوة نتوورك، تهتم بمجال البرمجة وتسيير المواقع الإلكترونية بفضل فريق متخصص في تقنيات التصميم والتسويق الرقمي راكم تجربة تفوق 20 سنة في هذا المجال. 
+                </p>
+                <p>
+                    استطعنا بفضل هذه التجربة توسيع مجال معاملاتنا داخل المغرب وخارجه في عدة دول عربية وأجنبية، وحملنا على عاتقنا تحدي الريادة في تقديم الخدمات لزبنائنا ونؤمن جيدا أن ثروتنا الحقيقية هي إرضاء تطلعاتهم.
+                </p>
+            </div>
+        </div>
+        <div class="footer-column">
             <h3>روابط سريعة</h3>
             <ul>
                 <li><a href="index.html">الصفحة الرئيسية</a></li>
                 <li><a href="index.html#about">من نحن</a></li>
                 <li><a href="index.html#contact">تواصل معنا</a></li>
-                <li><a href="ar/merchant-waiting.html">قائمة الإنتظار</a></li>
+                <li><a href="index.html#services">خدماتنا</a></li>
+                <li><a href="index.html#faq">الأسئلة الشائعة</a></li>
+                <li><a href="index.html#production">الإنتاج</a></li>
             </ul>
         </div>
-        <div class="footer-column" data-aos="fade-right" data-aos-duration="1200">
+        <div class="footer-column">
             <h3>معلومات</h3>
             <ul>
                 <li><a href="ar/terms-conditions.html">الشروط والأحكام</a></li>
                 <li><a href="ar/privacy-policy.html">سياسة الخصوصية</a></li>
+                <li><a href="#">شركاؤنا</a></li>
             </ul>
         </div>
-        <div class="footer-column" data-aos="fade-left" data-aos-duration="1200">
+        <div class="footer-column">
             <h3>تابعونا</h3>
             <ul class="social-links">
-                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                <li><a href="#"><i class="fab fa-snapchat"></i> Snapchat</a></li>
-                <li><a href="#"><i class="fab fa-tiktok"></i> Tiktok</a></li>
+                <li><a href="https://www.instagram.com/ikhwainvestments" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.youtube.com/@ikhwainvestments" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+                <li><a href="https://x.com/ikhwainvestment" target="_blank"><i class="fab fa-x-twitter"></i> X (Twitter)</a></li>
+                <li><a href="https://t.me/ikhwainvestments" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a></li>
+                <li><a href="https://www.facebook.com/ikhwainvestment" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="https://www.linkedin.com/showcase/ikhwainvestments" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
             </ul>
         </div>
     </div>
-    <div class="copyright" data-aos="fade-up" data-aos-duration="1000">
-        حقوق الطبع والنشر &copy; 2025. جميع الحقوق محفوظة لشركة Modalst.
+    <div class="container">
+        <div class="footer-bottom">
+            <a href="#" class="downloads">تنزيل الشعار وكتالوج</a>
+            <p class="copyright">
+                كل الحقوق محفوظة لشركة IKHWA DIGITAL BY IKHWA NETWORK ش.م.م ©   
+            </p>
+        </div>
     </div>
 </footer>
+<!-- / Footer -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKBA_O21juKLxLqolMv58TEbCK-q1tuB0&callback=initializeMap" async defer></script>
+<script>
+    function initializeMap() {
+        const options = {
+            zoom: 16,
+            center: { lat: 33.894917, lng: -5.595111 },
+        };
 
-  <!-- / Footer -->
-  <!-- Button Floating Contact -->
-  <div class="floating-contact">
-    <div class="contact-menu">
-      <a href="#" target="_blank" class="contact-btn whatsapp" title="واتساب">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <a href="#contact" class="contact-btn support" title="الدعم الفني">
-        <i class="fas fa-headset"></i>
-      </a>
-    </div>
-    <button class="toggle-btn" onclick="toggleContactMenu()">
-      <i class="fas fa-comment-alt"></i>
-    </button>
-  </div>
-  <!-- / Button Floating Contact -->
+        const map = new google.maps.Map(document.getElementById('map'), options);
+        const marker = new google.maps.Marker({
+            position: { lat: 33.894917, lng: -5.595111 },
+            map: map,
+        });
+    }
+</script>
+<!-- Load jQuery first -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Load Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            faqItems.forEach(i => {
+                if (i !== item) {
+                    i.classList.remove('active');
+                }
+            });
 
-  <!-- Load jQuery first -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Load Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <!-- Load AOS Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      AOS.init({
-        once: true, // Run animations only once
-        duration: 1000, // Animation duration
-        easing: "ease-in-out", // Animation easing
-        disable: function () {
-          return window.innerWidth < 576; // Disable animations on small screens
-        }
-      });
+            item.classList.toggle('active');
+        });
     });
-  </script>
-  <!-- Update main JavaScript file path -->
-  <script src="js/main.js"></script>
+</script>
+<script src="js/main.js"></script>
 </body>
 </html>

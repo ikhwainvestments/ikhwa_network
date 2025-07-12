@@ -1,0 +1,285 @@
+/* Start Hero */
+.hero {
+    margin-top: 180px;
+    margin-bottom: 120px
+}
+
+.hero .production {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.hero .production .production-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px
+}
+
+.hero .production .production-col .production-text p {
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--text-color);
+}
+
+/* Media Query */
+/* 991px */
+@media (max-width: 991px) {
+    .hero .production {
+        flex-direction: column;
+    }
+
+    .hero .production .production-col.reverse {
+        order: -1;
+    }
+
+    .hero .production .production-col .production-image {
+        order: -1;
+        align-self: flex-start;
+    }
+    .hero .production {
+        gap: 40px;
+    }
+}
+/* End Hero */
+/* Start Values */
+.values-section {
+    margin: 80px 0;
+    padding: 80px 0;
+    background-color: rgba(247, 248, 252, 1);
+}
+
+.values-section .values-header {
+    margin-bottom: 70px;
+}
+
+.values-section .values-header .values-subtitle {
+
+}
+
+.values-section .values-header .values-title {
+
+}
+
+.values-section .values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    align-items: center;
+}
+
+.values-section .values-grid .value-card {
+    padding: 24px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    min-height: 310px;
+}
+
+.values-section .values-grid .value-card .value-icon {
+
+}
+
+.values-section .values-grid .value-card .value-icon img {
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.values-section .values-grid .value-card .value-name {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.values-section .values-grid .value-card .value-description {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+/* Media Query */
+/* 991px */
+@media (max-width: 991px) {
+    .values-section .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+    .values-section .values-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+}
+/* End Values */
+
+/* Start Services */
+.production-services-section {
+    margin: 80px 0;
+    padding: 80px 0;
+}
+
+.production-services-section .container {
+    position: relative;
+
+}
+
+.production-services-section .section-header .gradient-text {
+
+}
+
+.production-services-section .section-header .section-description {
+
+}
+
+.production-services-section .production-swiper {
+    margin: 70px 0;
+}
+
+.production-services-section .production-swiper .swiper-wrapper {
+
+}
+
+.production-services-section .production-swiper .swiper-wrapper .swiper-slide {
+
+}
+
+.production-services-section .production-swiper .swiper-wrapper .service-card {
+
+}
+
+.production-services-section .production-swiper .swiper-wrapper .service-card .service-image {
+
+}
+
+.production-services-section .production-swiper .swiper-wrapper .service-card .service-image img {
+
+}
+
+.production-services-section .production-swiper .swiper-wrapper .service-card .service-title {
+    font-weight: 600;
+    margin: 40px 0 10px;
+    font-size: 26px;
+    line-height: normal;
+}
+
+.production-services-section .production-swiper .swiper-wrapper .service-card .service-description {
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: normal;
+}
+
+.production-services-section .swiper-arrows {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.production-services-section .swiper-arrows i {
+    font-size: 17px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    padding: 12px 16px;
+    width: 65px;
+    height: 50px;
+    border: 1px solid rgba(232, 0, 158, 1);
+    background: linear-gradient(92deg, rgba(8, 33, 119, 1) 12%, rgba(232, 0, 158, 1) 86%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 1s ease;
+}
+.production-services-section .swiper-arrows i:hover {
+    background: var(--linear, linear-gradient(90deg, #082177 0.08%, #E8009E 99.44%));
+    color: white;
+    -webkit-text-fill-color: unset
+}
+/* End Services */
+/* Start Production Process */
+.production-process-section {
+    padding: 80px 0;
+    margin: 80px 0 120px;
+    background: rgba(247, 248, 252, 1);
+}
+
+.production-process-section .process-header {
+    margin-bottom: 70px;
+}
+
+.production-process-section .process-header h2 {
+    margin-bottom: 16px;
+}
+
+.production-process-section .process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: flex-start;
+}
+
+.production-process-section .process-steps .process-step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.production-process-section .process-steps .process-step .step-info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.production-process-section .process-steps .process-step .step-title {
+    width: 240px;
+    font-size: 25px;
+    line-height: normal;
+}
+
+.production-process-section .process-steps .process-step .step-description {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-color);
+    line-height: normal;
+}
+
+.production-process-section .process-steps .process-step .step-number {
+    margin-left: 50px;
+    background: white;
+    padding: 16px;
+    border-radius: 16px;
+}
+.production-process-section .process-steps .process-step .step-number img {
+}
+
+@media (max-width: 991px) {
+    .production-process-section .process-steps .process-step .step-info {
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .production-process-section .process-steps .process-step .step-title {
+        width: auto;
+        font-size: 18px;
+        margin: 0;
+    }
+    .production-process-section .process-steps .process-step .step-description {
+        font-size: 16px;
+    }
+
+    .production-process-section .process-steps {
+        gap: 32px;
+    }
+
+}
+/* End Production Process */
