@@ -7,15 +7,18 @@ body {
     text-align: left !important;
     font-family: "Raleway", sans-serif !important;
 }
-s
+
 /* End Body */
 
 /* Start Header */
-.header .mobile-menu .main-nav > li > a::before {
-    left: 0;
-    right: auto;
-}
 
+
+@media (min-width: 992px) {
+    .header .mobile-menu .main-nav > li > a::before {
+        left: 0;
+        right: auto;
+    }
+}
 @media (max-width: 991px) {
     .header .mobile-menu .main-nav > li > a {
         padding-left: 23px;
@@ -54,8 +57,29 @@ footer .social-links li a i {
 .contact-section .contact-content {
     direction: rtl;
 }
+
+.contact-section .contact-content .contact-form {
+    direction: ltr;
+}
+
+.contact-section .contact-content .contact-form .contact-options {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contact-section .contact-content .contact-form .contact-options .form-check {
+    padding: 0;
+}
+.contact-section .contact-content .contact-info p {
+    direction: ltr;
+}
 /* End Contact */
 
+/* Start FAQ */
+.faq-section .container .faq-content .faq-item .faq-question h4 {
+    font-size: 20px;
+}
+/* End FAQ */
 /* 
 ==================================================
 ================= Production.html =================
