@@ -17,16 +17,25 @@
     font-weight: 600;
     font-size: 18px;
     color: var(--heading-color);
+    display: block;
+    margin: 10px 0;
 }
 .legal ul {
     list-style: disc;
     padding-inline-start: 40px;
 }
+.legal ol li p {
+    line-height: 1.6
+}
+
 .legal ol li p,
 .legal ol li,
 .legal ul li {
     font-weight: 500;
     color: var(--text-color);
-    line-height: normal
+}
+
+.legal ol li, .legal ul li {
+    margin: 10px 0;
 }
 /* End Legal */

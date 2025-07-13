@@ -111,7 +111,6 @@ Table of Content
     font-weight: 600;
     font-size: 25px;
     color: var(--heading-color);
-    line-height: normal;
 }
 @media (max-width: 991px) {
     .section-description {
@@ -183,7 +182,7 @@ body::-webkit-scrollbar-thumb {
 
 .header.scrolled {
     background-color: rgba(255, 255, 255, 0.95); 
-    min-height: 70px; 
+    min-height: 80px; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 

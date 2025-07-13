@@ -1,0 +1,88 @@
+/* Import Font: Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+/* Start Body */
+body {
+    direction: ltr !important;
+    text-align: left !important;
+    font-family: "Raleway", sans-serif !important;
+}
+s
+/* End Body */
+
+/* Start Header */
+.header .mobile-menu .main-nav > li > a::before {
+    left: 0;
+    right: auto;
+}
+
+@media (max-width: 991px) {
+    .header .mobile-menu .main-nav > li > a {
+        padding-left: 23px;
+    } 
+}
+
+.footer-column:nth-child(2) {
+    flex: 0 0 450px;
+}
+/* End Header */
+
+/* Start Footer */
+footer .footer-column ul li a::before {
+    left: 0;
+    right: auto;
+}
+
+footer .social-links li a i {
+    margin-right: 15px;
+    margin-left: auto;
+}
+/* End Footer */
+
+/* 
+==============================================
+================= Index.html =================
+==============================================
+*/
+/* Start Hero */
+.hero .statistic {
+    background-position: 0;
+}   
+/* End Hero */
+
+/* Start Contact */
+.contact-section .contact-content {
+    direction: rtl;
+}
+/* End Contact */
+
+/* 
+==================================================
+================= Production.html =================
+==================================================
+*/
+/* Start Production Services */
+.production-services-section .swiper-arrows {
+    flex-direction: row-reverse;
+}
+
+.production-process-section .process-steps .process-step .step-number {
+    margin-right: 50px;
+    margin-left: auto;
+}
+
+@media (max-width: 991px) {
+    .production-process-section .process-steps .process-step .step-number {
+        margin-right: 5px;
+        margin-left: auto;
+    }
+}
+/* End Production Services */
+
+
+/* Start Companies Grid */
+.companies-grid .company-card .content .company-footer i {
+    transform: rotate(180deg);
+}
+
+/* End Companies Grid */
