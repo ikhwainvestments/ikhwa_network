@@ -111,6 +111,7 @@ Table of Content
     font-weight: 600;
     font-size: 25px;
     color: var(--heading-color);
+    line-height: normal;
 }
 @media (max-width: 991px) {
     .section-description {
@@ -467,7 +468,6 @@ footer::after {
     background-color: rgba(0, 0, 0); 
     z-index: -1; 
     border-radius: 40px;
-    opacity: 70%;
 }
 
 footer .container:first-child {

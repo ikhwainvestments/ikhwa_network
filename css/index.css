@@ -143,11 +143,11 @@
     color: var(--primary-color);
     font-weight: 600;
     margin-bottom: 16px;
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .services-section .container .services-grid .service-card .service-description {
-    font-size: 20px;
+    font-size: 17px;
     color: var(--text-color);
 }
 

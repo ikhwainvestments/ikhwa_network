@@ -1,0 +1,32 @@
+/* Start Hero */
+.hero {
+    margin-top: 180px;
+    margin-bottom: 120px
+}
+/* End Hero */
+
+/* Start Legal */
+.legal {
+    margin: 80px 0;
+}
+.legal ol {
+    list-style: decimal;
+}
+
+.legal ol li span {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--heading-color);
+}
+.legal ul {
+    list-style: disc;
+    padding-inline-start: 40px;
+}
+.legal ol li p,
+.legal ol li,
+.legal ul li {
+    font-weight: 500;
+    color: var(--text-color);
+    line-height: normal
+}
+/* End Legal */
