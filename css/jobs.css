@@ -1,0 +1,279 @@
+.header {
+    background-color: transparent;
+}
+/* 
+==========================
+====== Start Hero ========
+==========================
+*/
+.hero-section {
+    background-image: url("../image/hero_background_jobs.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 60px;
+}
+
+/* Media Queries */
+/* 991px */
+@media (max-width: 991px) {
+    .hero-section {
+        height: 90vh;
+    }
+    .hero-section .container {
+        flex-direction: column;
+    }
+}
+
+/* 991px */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 70vh;
+        background-size: 294%;
+        background-position: 0;
+    }
+    .hero-section .hero-image img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+}
+
+/* 
+==========================
+====== End Hero ========
+==========================
+*/
+
+/* 
+=========================
+==== Start Contact  =====
+=========================
+*/
+.contact-section {
+    background-color: rgba(246, 250, 255, 1);
+    margin: 0;
+    padding: 80px 0;
+}
+.contact-section .contact-content {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.contact-section .contact-header {
+    text-align: center;
+}
+.contact-section .contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 240px);
+    gap: 30px 50px;
+    padding: 32px 32px 0 0;
+}
+
+.contact-section .contact-info .info-item .info-label {
+    color: rgba(0, 0, 0, 1);
+    position: relative;
+}
+.contact-section .contact-info .info-item .info-label::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    background-color: var(--Primary);
+    bottom: -8px;
+    right: 0;
+}
+
+.contact-section .contact-info .info-item .info-value {
+    margin-top: 20px;
+}
+
+.contact-section .contact-content .contact-form {
+    width: 100%;
+    border: 1px solid #BABBC0;
+    padding: 48px;
+    background-color: white;
+    color: var(--Text);
+}
+
+.contact-section .contact-content .contact-form .form-row {
+    display: flex;
+    gap: 24px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-section .contact-content .contact-form .form-row > * {
+    flex: 1;
+}
+
+.contact-section .contact-content .contact-form .form-label {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--Text);
+}
+.contact-section .contact-content .contact-form form input,
+.contact-section .contact-content .contact-form form textarea {
+    margin-bottom: 24px;
+    border-width: 2px;
+}
+
+.contact-section .contact-content .contact-form form input::placeholder,
+.contact-section .contact-content .contact-form form textarea::placeholder {
+    color: var(--Paragraph);
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.contact-section .contact-content .contact-form form input:focus,
+.contact-section .contact-content .contact-form form textarea:focus {
+    box-shadow: none;
+    border: 2px solid var(--Primary);
+    outline: none;
+}
+.contact-section .contact-content .contact-form form input[type="file"] {
+    display: none;
+}
+
+.contact-section .contact-content .contact-form form .file-upload .file-upload-label {
+    width: 100%;
+    border-radius: 6px;
+    border: 2px solid #dee2e6;
+    padding: 16px 50px;
+    font-size: 11px;
+    color: var(--Paragraph);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.contact-section .contact-content .contact-form form .file-upload .file-upload-label i {
+    font-size: 24px;
+}
+
+.contact-section .contact-content .contact-form .contact-options .form-check {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-section .contact-content .contact-form .contact-options .form-check label:last-child {
+    color: rgba(22, 28, 45, 1);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.contact-section .contact-content .contact-form .contact-options .custom-radio {
+    border: 1px solid var(--Paragraph);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contact-section .contact-content .contact-form .contact-options {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.contact-section .contact-content .contact-form .contact-options label .checkmark {
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border-radius: 50%;
+    background: var(--Primary);
+    display: inline-block;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.contact-section .contact-content .contact-form .contact-options  input[type="radio"] {
+    display: none;
+}
+
+.contact-section .contact-content .contact-form .contact-options  input[type="radio"]:checked + .checkmark {
+    opacity: 1;
+}
+
+.contact-section .contact-content .contact-form .submit-btn {
+    background: var(--Primary);
+    border: none;
+    color: white;
+    width: 100%;
+    height: 48px;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+/* Media Queries */
+/* 1200px */
+@media (min-width: 991px) and (max-width: 1200px) {
+    .contact-section .contact-info {
+        grid-template-columns: repeat(1, 240px);
+    }
+}
+/* 991px */
+@media (max-width: 991px) {
+    .contact-section .contact-content {
+        align-items: center;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contact-section .contact-content .contact-info {
+        align-self: flex-start;
+        padding: 0;
+        order: -1
+    }
+    .contact-section .contact-content .contact-form .contact-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-section .contact-content {
+        padding: 15px
+    }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+    .contact-section .contact-info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-section .contact-content .contact-form .form-row {
+        flex-direction: column;
+    }
+    .contact-section .contact-content .contact-form .form-row > * {
+        width: 100%;
+    }   
+    .contact-section .contact-content .contact-form {
+        min-width: auto;
+        padding: 30px 15px;
+    }
+    .contact-section .contact-content .contact-form form .file-upload .file-upload-label {
+        padding: 15px;
+    }
+}
+/* 
+=======================
+==== End Contact  =====
+=======================
+*/

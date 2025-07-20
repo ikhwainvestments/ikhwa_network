@@ -1,97 +1,259 @@
-/* Start Hero */
-.hero {
-    margin-top: 180px;
-    margin-bottom: 120px
+.header {
+    background-color: transparent;
 }
-/* End Hero */
-/* Start Partners */
-.companies-grid {
-    margin-bottom: 120px;
-}
-
-.companies-grid .container {
+/* 
+==========================
+====== Start Hero ========
+==========================
+*/
+.hero-section {
+    background-image: url("../image/hero_background_jobs.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 120px;
-    flex-direction: column
 }
-
-.companies-grid .company-card {
+.hero-section .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 70px;
-}
-
-.company-card:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.companies-grid .company-card .company-image img {
-    width: 500px;
-    margin: 0 auto;
-}
-
-.companies-grid .company-card .company-image,
-.companies-grid .company-card .content {
-    width: 50%;
-}
-
-.companies-grid .company-card .content .company-header .company-name {
-    color: var(--heading-color);
-    font-weight: 600;
-    font-size: 30px;
-    margin-bottom: 16px;
-}
-
-.companies-grid .company-card .content .company-description {
-    font-weight: 500;
-    font-size: 20px;
-    color: var(--text-color);
-    margin-bottom: 32px;
-}
-
-.companies-grid .company-card .content .company-footer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 16px;
-}
-
-.companies-grid .company-card .content .company-footer a,
-.companies-grid .company-card .content .company-footer i {
-    background: var(--linear, linear-gradient(90deg, #082177 0.08%, #E8009E 99.44%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 22px;
-    font-weight: 600;
+    justify-content: space-around;
+    gap: 60px;
+    text-align: center;
 }
 
 /* Media Queries */
 /* 991px */
 @media (max-width: 991px) {
-    .companies-grid .company-card {
-        flex-direction: column
+    .hero-section {
+        height: 40vh;
     }
-    .companies-grid .company-card .company-image,
-    .companies-grid .company-card .content {
-        width: 100%;
+    .hero-section .container {
+        flex-direction: column;
     }
 }
 
-/* 767px */
-@media (max-width: 767px) {
-    .companies-grid .company-card .content .company-header .company-name {
-        font-size: 24px;
-    }
-    .companies-grid .company-card .content .company-description {
-        font-size: 16px;
-    }
-    .companies-grid .company-card .content .company-footer a, .companies-grid .company-card .content .company-footer i {
-        font-size: 17px;
+/* 991px */
+@media (max-width: 768px) {
+    .hero-section {
+        background-size: 294%;
+        background-position: 0;
     }
 }
-/* End Partners */
+
+/* 
+==========================
+====== End Hero ========
+==========================
+*/
+
+/* 
+==========================
+====== Start Partner ========
+==========================
+*/
+.company-slider-section {
+    margin-bottom: 300px;
+    position: relative;
+}
+
+/* Pagination Container */
+.swiper-pagination.swiper-pagination-horizontal {
+    padding: 15px 0;
+    position: relative;
+    z-index: 10;
+    bottom: 100px;
+}
+
+/* Bullet Base Styles */
+.swiper-pagination-bullet {
+    width: 156px;
+    height: 156px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 3px solid transparent;
+    margin: 10px !important;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+        0 2px 5px rgba(0, 0, 0, 0.1),
+        0 4px 10px rgba(16, 157, 70, 0.2);
+    opacity: 1;
+}
+
+/* Active Bullet */
+.swiper-pagination-bullet-active {
+    transform: scale(1.15);
+    border-color: rgba(16, 157, 70, 1);
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.15),
+        0 6px 15px rgba(16, 157, 70, 0.3),
+        0 0 0 4px rgba(16, 157, 70, 0.1);
+    background-color: white;
+}
+
+/* Hover Effect */
+.swiper-pagination-bullet:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.15),
+        0 6px 15px rgba(16, 157, 70, 0.25);
+}
+
+/* Pulse Animation for Active Bullet */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(16, 157, 70, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(16, 157, 70, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(16, 157, 70, 0); }
+}
+
+.swiper-pagination-bullet-active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+/* Logo Bullet Styles */
+.swiper-pagination-bullet {
+    background-size: 82% ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Company Logo Assignments */
+.swiper-pagination-bullet[aria-label="Go to slide 1"] {
+    background-image: url("../image/parnters-page/paginate/artyads.svg");
+}
+.swiper-pagination-bullet[aria-label="Go to slide 2"] {
+    background-image: url("../image/parnters-page/paginate/boklite.svg");
+}
+.swiper-pagination-bullet[aria-label="Go to slide 3"] {
+    background-image: url("../image/parnters-page/paginate/ikhwadigital.svg");
+}
+.swiper-pagination-bullet[aria-label="Go to slide 4"] {
+    background-image: url("../image/parnters-page/paginate/ikhwainvestments.svg");
+}
+.swiper-pagination-bullet[aria-label="Go to slide 5"] {
+    background-image: url("../image/parnters-page/paginate/karihome.svg");
+}
+.swiper-pagination-bullet[aria-label="Go to slide 6"] {
+    background-image: url("../image/parnters-page/paginate/karilive.svg");
+}
+
+.company-slider-section .swiper-wrapper {}
+.company-slider-section .swiper-slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    padding-top: 100px;
+
+}
+.company-slider-section .swiper-slide.artyads {
+    background-image: url("../image/parnters-page/bg/artyads.png");
+}
+
+.company-slider-section .swiper-slide.boklite {
+    background-image: url("../image/parnters-page/bg/boklite.png");
+}
+
+.company-slider-section .swiper-slide.ikhwadigital {
+    background-image: url("../image/parnters-page/bg/ikhwadigital.png");
+}
+
+.company-slider-section .swiper-slide.ikhwainvestments {
+    background-image: url("../image/parnters-page/bg/ikhwainvestments.png");
+}
+
+.company-slider-section .swiper-slide.karihome {
+    background-image: url("../image/parnters-page/bg/karihome.png");
+}
+
+.company-slider-section .swiper-slide.karilive {
+    background-image: url("../image/parnters-page/bg/karilive.png");
+}
+.company-slider-section .container {}
+.company-slider-section .slide-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.company-slider-section .slide-image {
+    min-width: 100px;
+}
+.company-slider-section .swiper-slide.karilive  .slide-image {
+    background: var(--White);
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.company-slider-section .slide-image img {}
+.company-slider-section .slide-text {}
+.company-slider-section .company-logo-icon {}
+.company-slider-section .company-logo-icon img {}
+.company-slider-section .company-title {
+    color: var(--White);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px; 
+    margin-bottom: 24px;
+}
+.company-slider-section .company-description {
+    color: var(--White);
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.company-slider-section .visit-site-button {
+    display: block;
+    width: 400px;
+    padding: 16px 24px;
+    background: var(--Primary);
+    color: var(--White);
+    text-align: center;
+    font-size: 18px;
+}
+.company-slider-section .swiper-button-prev {}
+.company-slider-section .swiper-button-next {}
+.company-slider-section .swiper-pagination {}
+
+/* Media Queries */
+/* 768px */
+@media (max-width: 768px) {
+    .company-slider-section .slide-content {
+        flex-direction: column;
+    }
+   .company-slider-section .company-title {
+    font-size: 25px;
+}
+.company-slider-section .company-description {
+    font-size: 17px;
+}
+.company-slider-section .visit-site-button {
+    width: 100%;
+}
+.company-slider-section .swiper-slide {
+    height: 1000px;
+}
+.company-slider-section .swiper-slide {
+    padding-top: 20px;
+}
+.swiper-pagination.swiper-pagination-horizontal {
+    bottom: 300px;
+}
+}
+/* 
+==========================
+====== End Partner ========
+==========================
+*/

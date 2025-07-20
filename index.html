@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="إخوة ديجيتال شركة مغربية تابعة لمجموعة إخوة نتوورك، متخصصة في تطوير وإدارة المواقع الإلكترونية والتسويق الرقمي. بفضل خبرة تتجاوز 20 عامًا، نخدم زبناءنا داخل المغرب وخارجه، وملتزمون بتقديم أفضل الحلول الرقمية.">
-    <meta name="keywords" content="إخوة ديجيتال، تطوير مواقع المغرب، التسويق الرقمي المغرب، إدارة المواقع، تصميم المواقع، إخوة نتوورك، البرمجة، تحسين محركات البحث، حلول رقمية، بناء الهوية البصرية">
-    <meta name="author" content="فريق إخوة ديجيتال">
-    <title>إخوة ديجيتال، شريكك المثالي للابتكار والتحوّل الرقمي</title>
+    
+    <meta name="description" content="إخوة نتوورك شركة مغربية تنشط في مجال العقار داخل المغرب وخارجه، تستثمر خبرتها الطويلة في الإنعاش العقاري لتقديم أجود الخدمات لزبنائها، مع التزام بأعلى مستويات الجودة والإتقان.">
+    <meta name="keywords" content="إخوة نتوورك، شركة عقارية المغرب، استثمار عقاري، مشاريع عقارية، تطوير عقاري، المغرب، العقارات، البناء، التسويق العقاري، إخوة">
+    <meta name="author" content="مجلس إدارة إخوة نتوورك">
+    <title>إخوة نتوورك | الريادة في الاستثمار والتطوير العقاري بالمغرب وخارجه</title>
+
+    <!-- Open Graph Meta Tags (للسوشيال ميديا) -->
+    <meta property="og:title" content="إخوة نتوورك | الريادة في الاستثمار والتطوير العقاري بالمغرب وخارجه">
+    <meta property="og:description" content="شركة إخوة نتوورك المغربية متخصصة في الإنعاش العقاري داخل المغرب وخارجه، ملتزمة بتقديم أجود الخدمات لزبنائها وإرساء شراكات استراتيجية لضمان الجودة والإتقان.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="URL-شعار-الشركة-أو-صورة-مشروع.jpg">
+    <meta property="og:url" content="https://ikhwanetwork.com">
+
     <link rel="icon" href="image/white-logo.svg" sizes="32x32"/>
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -21,20 +31,21 @@
   <div class="container">
     <!-- Logo -->
     <a class="logo" href="index.html">
-      <img src="image/logo.png" alt="IKHWA DIGITAL Logo" class="logo-img">
+      <img src="image/logo.png" alt="IKHWA NETWORK Logo" class="logo-img">
     </a>
 
     <div class="mobile-menu">
     <!-- links  -->
-      <ul class="main-nav">
-        <li><a href="index.html" class="nav-home active">الصفحة الرئيسية</a></li>
-        <li><a href="index.html#about" class="nav-about">من نحن</a></li>
+    <ul class="main-nav">
+        <li><a href="index.html" class="nav-home active">الرئيسية</a></li>
+        <li><a href="index.html#about" class="nav-about">شركتنا</a></li>
         <li><a href="index.html#services" class="nav-services">خدماتنا</a></li>
-        <li><a href="index.html#faq" class="nav-faq">الأسئلة الشائعة</a></li>
-        <li><a href="production.html" class="nav-production">الإنتاج</a></li>
         <li><a href="partners.html" class="nav-partners">شركاؤنا</a></li>
-        <li><a href="index.html#contact" class="nav-contact">اتصل بنا</a></li>
-      </ul>
+        <li><a href="jobs.html" class="nav-jobs">الوظائف</a></li>
+        <li><a href="index.html#faq" class="nav-faq">الاستفسارات</a></li>
+        <li><a href="index.html#contact" class="nav-contact">تواصل معنا</a></li>
+    </ul>
+
 
       <!-- language dropdown -->
       <div class="lang-dropdown">
@@ -43,8 +54,8 @@
           <span>العربية</span>
         </button>
         <ul class="lang-menu">
-          <li><a href="en/index.html">English (EN)</a></li>
-          <li><a href="fr/index.html">Franch (FR)</a></li>
+          <li><a href="en/production.html">English (EN)</a></li>
+          <li><a href="fr/production.html">Franch (FR)</a></li>
         </ul>
       </div>
     </div>
@@ -53,188 +64,298 @@
   </div>
 </div>
 <!-- / Header -->
-<!-- Hero -->
+
+<!-- Start Hero -->
 <div class="hero" id="hero">
     <div class="container">
-        <div class="hero-content">
-            <h2 class="gradient-text">إخوة ديجيتال</h2>
-            <h1 class="section-description">لنصنع معاً الفضاء الرقمي الذي تستحقه</h1>
-        </div>
-        <div class="statistic">
-            <div class="content">
-                <div class="statistic-item">
-                    <h2>50+</h2>
-                    <p>مشروع تم تسليمه</p>
-                </div>
-                <div class="statistic-item">
-                    <h2>20+</h2>
-                    <p>عملاء راضون</p>
-                </div>
-                <div class="statistic-item">
-                    <h2>4+</h2>
-                    <p>دول تغطيها خدماتنا</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- / Hero -->
-<!-- About Us -->
-<div class="about" id="about">
-    <div class="container">
-        <div class="about-content">
-            <h2 class="gradient-text">من نحن</h2>
-            <h1 class="section-description">
-                مركز الحلول الرقمية المبتكرة 
+        <div class="wrapper">
+            <h1>
+            نحن هنا لبناء سكن أحلامكم، ولنكون جزءا من مشروعكم
             </h1>
             <p>
-                إخوة ديجيتال شركة مغربية تندرج ضمن مجموعة شركات إخوة نتوورك، تهتم بمجال البرمجة وتسيير المواقع الإلكترونية بفضل فريق متخصص في تقنيات التصميم والتسويق الرقمي راكم تجربة تفوق 20 سنة في هذا المجال.
+                اكتشف فرصًا عقارية تفوق توقعاتك — نحن هنا لنحقق رؤيتك
             </p>
-            <p>
-                استطعنا بفضل هذه التجربة توسيع مجال معاملاتنا داخل المغرب وخارجه في عدة دول عربية وأجنبية، وحملنا على عاتقنا تحدي الريادة في تقديم الخدمات لزبنائنا ونؤمن جيدا أن ثروتنا الحقيقية هي إرضاء تطلعاتهم.
-            </p>
-        </div>
-        <div class="about-image">
-            <img src="image/about.svg" alt="About Us Image">
+            <a href="index.html#services">اكتشف خدماتنا</a>
         </div>
     </div>
-
 </div>
-<!-- / About Us -->
+<!-- End Hero -->
+<!-- Start About -->
+<section class="about-company-section">
+	<div class="container">
+		<div class="about-company-grid">
+			<div class="about-company-image">
+				<img src="image/about_right.png" alt="Houses on coins">
+			</div>
+
+			<div class="about-company-content">
+				<h2 class="section-title">تعرّف على شركتنا</h2>
+				<p class="section-description">
+                    شركة إخوة نتوورك شركة مغربية تنشط في مجال العقار داخل المغرب وخارجه تستثمر خبرتها التي راكمتها لسنوات في مجال الإنعاش العقاري لتقديم أجود الخدمات لزبنائنا، ويسهر مجلس إدارة الشركة على تحسين هيكلة المعاملات وتعزيز العلاقات مع شركاء استراتجيين في الميدان ليضمن أعلى مستويات الإتقان والجودة والإلتزام وليترك بصمته الخاصة في كل المشاريع التي يحتضنها.
+                </p>
+
+				<div class="about-company-stats">
+					<div class="stat-item">
+						<span class="stat-number">+250</span>
+						<span class="stat-label">استشارة عقارية</span>
+					</div>
+					<div class="stat-item">
+						<span class="stat-number">100%</span>
+						<span class="stat-label">تركيز على الجودة</span>
+					</div>
+					<div class="stat-item">
+						<span class="stat-number">+100</span>
+						<span class="stat-label">شريك ومورد موثوق</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="about-company-image">
+				<img src="image/about_left.png" alt="Handshake Image">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End About -->
+<!-- Start Ceo Message -->
+<div class="ceo-message-section">
+    <div class="dd"></div>
+	<div class="container">
+		<h2 class="section-title">رسالة الرئيس التنفيذي للشركة</h2>
+		<p>من دواعي سروري أن أرحب بكم ضمن شبكة إخوة نتوورك، الشركة المغربية المتخصصة في مجال التطوير العقاري والتي راكمت تجربة لسنوات عديدة تفوق 20 سنة.</p>
+		<p>منذ تأسيس الشركة نهجنا سياسات ترتكز على الخبرة العلمية والميدانية والتدبيرية كذلك، نسعى من خلالها تسخير كل الطاقات المهنية والإدارية لتقديم أجود المنتجات العقارية ونؤكد لزبنائنا مدى التزامنا في كل تعاقد يجمعنا.</p>
+        <p>في شبكة إخوة نستحضر جسامة مسؤوليتنا اتجاه وطننا وزبنائنا ونؤمن أن كل مشروع نتحمل مسؤوليته لن يكون آخر تعاقد مع زبوننا وإنما بداية لعلاقات مهنية مبنية على الثقة والإلتزام وحسن التدبير،فقد أكسبتنا التجربة أن جودة المنتوج تضمن المردود الاقتصادي لكافة الأطراف المتعاقدة وتعزز مكانة شركتنا في سوق العقار في ضل حدة المنافسة التي يشهدها الميدان.</p>
+        <p>نحن نعتبر إدارة الأعمال والعقار فن يستوجب الإبداع والإبتكار مما يفرض علينا التطوير الدائم لكفاءاتنا وآليات اشتغالنا في الميدان وتقديم مخططات استراتيجية تضمن لنا مكانا في المستقبل.</p>
+        <p>وفي الختام، أتقدم بجزيل الشكر والإمتنان لزبنائنا الأعزاء وللسادة المساهمين ولكافة أعضاء مجلس الإدارة على ثقتهم ودعمهم الدائم، والشكر موصول لكل فرق العمل الميداني من مهندسين وتقنيين وعمال على تفانيهم في ترجمة توجهاتنا على أرض الواقع بنفس معايير الجودة و الإتقان.</p>
+        <p class="ceo-signature">
+            محمد سعد الراجي
+            <br>
+            رئيس مجلس الإدارة التنفيذية
+        </p>
+	</div>
+    <div class="board-message-section">
+	<div class="container">
+		<div class="board-message-box">
+			<h2 class="section-title">مجلس إدارة الشركة: (إدارة نزيهة و تعامل مرن)</h2>
+			<p class="section-description">
+                يلتزم أعضاء مجلس إدارة شبكة إخوة بالمساهمة في تنفيذ الرؤية السامية لصاحب الجلالة الملك محمد السادس نصره الله وذلك بالمشاركة في تعزيز وتطوير الإقتصاد الوطني خاصة في مجال العقار كرافعة أساسية للتنمية، كما يلتزم بتوطيد أصوال التعامل مع زبنائنا وضمان حماية مشاريعهم كما يسهر على حماية أصول واستثمارات الشركة.
+            </p>
+		</div>
+        <img src="image/ceo/place.png" alt="place">
+	</div>
+</div>
+</div>
+<!-- End Ceo Message -->
+<!-- Start Company Strategy -->
+<div class="company-strategy-section">
+	<div class="container">
+		<div class="strategy-content">
+			<div class="strategy-text">
+				<h2 class="section-title">استراتيجية الشركة</h2>
+				<div class="section-description">
+					<p>
+						تعتمد إدارة الشركة على إجراء دراسات ميدانية وأبحاث دائمة حول ديناميكية سوق العقار ومتطلبات الإنشاء، بهدف تطوير استراتيجية متماشية مع الشركاء الاقتصاديين، وخلق مناخ خاص بها في الخدمات العقارية على المدى القريب والبعيد.
+					</p>
+					<p>
+						تعتمد استراتيجية الشركة على مبادئ معينة تتمثل في:
+					</p>
+				</div>
+				<div class="strategy-principles-grid">
+					<div class="principle-card">
+						<div class="icon">
+                            <img src="image/strategy/icon1.png" alt="icon1">
+                        </div>
+						<p>إدارة مالية دقيقة للمشاريع ومشاريع الذكاء</p>
+					</div>
+					<div class="principle-card">
+						<div class="icon">
+                            <img src="image/strategy/icon2.png" alt="icon1">
+                        </div>
+						<p>نموذج معتمد في إدارة الموارد البشرية</p>
+					</div>
+					<div class="principle-card">
+						<div class="icon">
+                            <img src="image/strategy/icon4.png" alt="icon1">
+                        </div>
+						<p>تحقيق الريادة في الخدمات العقارية</p>
+					</div>
+					<div class="principle-card">
+						<div class="icon">
+                            <img src="image/strategy/icon3.png" alt="icon1">
+                        </div>
+						<p>إدارة وتطوير مختلف العقارات</p>
+					</div>
+				</div>
+			</div>
+            <div class="strategy-image">
+				<img src="image/strategy/company-strategy.png" alt="مخطط بناء وعقارات">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Company Strategy -->
+<!-- Start Features -->
+<div class="features-section">
+    <div class="container">
+        <div class="features-header">
+            <h2 class="section-title">أهم ما يميزنا</h2>
+            <p class="section-description">
+                في شبكة إخوة، نؤمن أن العقار فن والتزام، ولهذا نحرص على تقديم تجربة عقارية متكاملة تُلبي تطلعاتكم.
+                نضمن لكم الجودة والسكن المثالي بتكلفة ترضيكم، مدعومين برؤية واضحة وفريق يمتلك خبرات ميدانية راسخة.
+                خبرتنا تجعلنا روادًا في المجال، ونواصل الابتكار لنمنحكم قيمة استثمارية حقيقية تعزز من جودة الحياة
+            </p>
+        </div>
+        <div class="features-navigation">
+            <div class="button-next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="button-prev">
+                <i class="fa-solid fa-chevron-left"></i> 
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <div class="features-swiper swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon">
+                            <img src="image/features/icon1.png" alt="icon1">
+                        </div>
+                        <h3 class="feature-title">رؤيتنــــــــا</h3>
+                        <p class="feature-description">خلق بصمة خاصة في سوق العقار وتعزيز ثقة الزبناء في خدماتنا</p>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon">
+                            <img src="image/features/icon2.png" alt="icon1">
+                        </div>
+                        <h3 class="feature-title">رسالتنــــــــا</h3>
+                        <p class="feature-description">إدارة المشاريع العقارية بتقنيات مبتكرة وذات معايير عالمية تجعلنا روادا في السوق العقارية.</p>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon">
+                            <img src="image/features/icon4.png" alt="icon1">
+                        </div>
+                        <h3 class="feature-title">كفاءة</h3>
+                        <p class="feature-description">نضمنها بفريق عمل متناسق وذو تجربة عالية وتكوين مهني مستمر وآليات عمل جد متطورة.</p>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon">
+                            <img src="image/features/icon3.png" alt="icon1">
+                        </div>
+                        <h3 class="feature-title">قيمنـــــــــا</h3>
+                        <p class="feature-description">مستمدة من إيماننا بمبدأ الإلتزام المهني كركيزة للتعاقد مع الزبناء.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Features -->
 <!-- Start Services -->
-<section class="services-section" id="services">
+<div class="our-services-section">
     <div class="container">
-        <h2 class="gradient-text">خدماتنا التقنية والتسويقية</h2>
-        <p class="section-description">
-            تقديم برامج ومنصات رقمية تعمل على تعزيز الإستراتيجية المعلوماتية للشركات وتطوير مجال معاملاتهم التجارية
-        </p>
-
-        <div class="services-grid">
-            <div class="service-card">
-                <img src="image/services/branding-icon.png" alt="الهوية التجارية" class="service-icon">
-                <h4 class="service-title">الهوية التجارية</h4>
-                <p class="service-description">
-                    نضمن لزبنائنا هوية رقمية متكاملة وخدمات تقنية عالية الجودة من الفكرة إلى التصميم الجرافيكي
+        <div class="services-header">
+            <div class="text">
+                <h2 class="section-title">خدماتنا</h2>
+                <p class="section-description">
+                    نقدم خدمات متكاملة في مجال الإستثمار العقاري وإدارة الأملاك العقارية بالمملكة المغربية
                 </p>
             </div>
-
-            <div class="service-card">
-                <img src="image/services/marketing-icon.png" alt="التسويق" class="service-icon">
-                <h4 class="service-title">التسويق</h4>
-                <p class="service-description">
-                    نعزز حضوركم الرقمي بفضل تحربتنا في التصوير، الإنتاج وصياغة المحتوى وكذا إدارة صفحات التواصل الاجتماعي
-                </p>
-            </div>
-
-            <div class="service-card">
-                <img src="image/services/app-icon.png" alt="برمجة التطبيقات" class="service-icon">
-                <h4 class="service-title">برمجة التطبيقات</h4>
-                <p class="service-description">
-                    إعداد برامج معلوماتية وتطبيقات هاتفية عالية الجودة مرفوقة بأنظمة أمان فعالة وخدمات تقنية وإدارية
-                </p>
-            </div>
-
-            <div class="service-card">
-                <img src="image/services/graphics-icon.png" alt="التصوير الفوتوغرافي والإخراج" class="service-icon">
-                <h4 class="service-title">التصوير الفوتوغرافي والإخراج</h4>
-                <p class="service-description">
-                    نهدف إلى إنتاج محتوى بصري احترافي يعكس تطلعاتكم بجودة عالية يترجم رغبة الزبون و يلبي حاجيات المتلقي
-                </p>
-            </div>
-
-            <div class="service-card">
-                <img src="image/services/web-icon.png" alt="برمجة وتصميم المواقع الإلكترونية" class="service-icon">
-                <h4 class="service-title">برمجة وتصميم المواقع الإلكترونية</h4>
-                <p class="service-description">
-                    نقوم بتصميم وتطوير مواقع ويب مخصصة مع إدارة كاملة ، من الصفحات المقصودة إلى التجارة الإلكترونية.
-                </p>
-            </div>
-
-            <div class="service-card">
-                <img src="image/services/social-icon.png" alt="تصميم محتوى التواصل الاجتماعي" class="service-icon">
-                <h4 class="service-title">تصميم محتوى التواصل الاجتماعي</h4>
-                <p class="service-description">
-                    نؤمن لزبوننا حضورا قويا لعلامته التجارية على منصات التواصل الاجتماعي ونساهم في رفع مستوى التفاعل على صفحته.
-                </p>
+            <div class="services-navigation">
+                <div class="button-ser-next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="button-ser-prev">
+                    <i class="fa-solid fa-chevron-left"></i> 
+                </div>
             </div>
         </div>
+        <!-- Start Services Slider -->
+        <div class="swiper services-swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide service-card card1">
+                    <div class="service-number">01</div>
+                    <h3 class="service-title">الاستشارات العقارية</h3>
+                    <p class="service-description">
+                        دراسة ملفات الملكية العقارية وعقود التأجير وكذا خدمات التدقيق للأصول العقارية وإعادة هيكلة المحافظ العقارية.
+                    </p>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide service-card card2">
+                    <img src="image/services/card2.png" alt="card2">
+                    <div class="service-number">02</div>
+                    <h3 class="service-title">دراسة المشاريع الإستثمارية</h3>
+                    <p class="service-description">
+                        تشمل دراسة السوق ودراسة الجدوى وإعداد التصاميم الهندسية، وكذا دراسة البنية المالية للمشروع.
+                    </p>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide service-card card3">
+                    <img src="image/services/card3.png" alt="card3">
+                    <div class="service-number">03</div>
+                    <h3 class="service-title">تجهيز وبناء المشاريع</h3>
+                    <p class="service-description">
+                        بالتنسيق مع شركة كاريهوم إحدى شركات إخوة نتوورك نقدم خدمة مميزة على مستوى البناء وتجهيز المشاريع العقارية بمعايير وجودة عالية في احترام تام لرغبة الزبون وتطلعاته
+                    </p>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide service-card card4">
+                    <div class="service-number">04</div>
+                    <h3 class="service-title">التسويق العقاري</h3>
+                    <p class="service-description">
+                        بفضل شركة إخوة ديجيتال التابعة لإخوة نتوورك نعمل على التسويق الرقمي للمشاريع العقارية بخلق مواقع إلكترونية ومنصات تجارية رقمية
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Services Slider -->
     </div>
-</section>
+</div>
 <!-- End Services -->
-<!-- Start Why Choose Us -->
-<section class="why-choose-us-section" id="why-choose-us">
-    <div class="container">
-        <h2 class="gradient-text">لماذا تختارنا؟</h2>
-        <p class="section-description">
-            إخوة ديجيتال ستكون الخيار الأنسب لصناعة محتواكم الرقمي ورفع رقم معاملاتكم التجارية , نحن شريكك الدائم في عالم رقمي أكثر تطورا
-        </p>
-
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <img src="image/why_choose_us/team-icon.png" alt="فريقنا">
-                </div>
-                <div class="feature-content">
-                    <h4 class="feature-title">فريقنا</h4>
-                    <p class="feature-description">
-                        فريق مهني محترف ومنفتخ على كفاءات محلية وأجنبية
-                    </p>
-                </div>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <img src="image/why_choose_us/vision-icon.png" alt="رؤيتنا">
-                </div>
-                <div class="feature-content">
-                    <h4 class="feature-title"> رؤيتنا </h4>
-                    <p class="feature-description">
-                        إرضاء زبنائنا وتوسيع مجال معاملاتهم ليصبحوا روادا في مجال التسويق
-                    </p>
-                </div>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <img src="image/why_choose_us/mission-icon.png" alt="رسالتنا وقيمنا">
-                </div>
-                <div class="feature-content">
-                    <h4 class="feature-title">رسالتنا وقيمنا</h4>
-                    <p class="feature-description">
-                        إدارة رقمية مميزة وحرفية لمشاريعك، الأمانة والإلتزام أساس تعاقدنا
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Why Choose Us -->
 <!-- Start Partners -->
 <section class="partners-section" id="partners">
     <div class="container">
-        <h3 class="gradient-text">شركاؤنا</h3>
-        <p class="section-description">
-            هم دعم حقيقي لنا ولزبنائنا،نسعى دائما لخلق جو من التعاون وتبادل الخبرات لإنجاح مشاريع عملائنا وتقوية تواجدهم في سوق المعاملات التجارية
-        </p>
+        <div class="image">
+            <img src="image/partners/backgound-section.png" alt="backgound-section">
+        </div>
+        <div class="partners-content">
+            <h3 class="section-title">شركاؤنا</h3>
+            <p class="section-description">
+                هم دعم حقيقي لنا ولزبنائنا،نسعى دائما لخلق جو من التعاون وتبادل الخبرات لإنجاح مشاريع عملائنا وتقوية تواجدهم في سوق المعاملات التجارية
+            </p>
 
-        <div class="partners-logos">
-            <div class="partner-logo">
-                <img src="image/partners/ikhwa_network.png" alt="شبكة إخوة">
-            </div>
-            <div class="partner-logo">
-                <img src="image/partners/ihkwa_invesments.png" alt="أخوة للاستثمارات">
-            </div>
-            <div class="partner-logo">
-                <img src="image/partners/karihome.png" alt="كايروهوم">
-            </div>
-            <div class="partner-logo">
-                <img src="image/partners/boklite.png" alt="بوكليت">
-            </div>
-            <div class="partner-logo">
-                <img src="image/partners/artyads.png" alt="آرتي آدز">
-            </div>
-            <div class="partner-logo">
-                <img src="image/partners/karilive.png" alt="كاريلاف">
+            <div class="partners-logos">
+                <div class="partner-logo">
+                    <img src="image/partners/ikhwa_network.png" alt="شبكة إخوة">
+                </div>
+                <div class="partner-logo">
+                    <img src="image/partners/ihkwa_invesments.png" alt="أخوة للاستثمارات">
+                </div>
+                <div class="partner-logo">
+                    <img src="image/partners/karihome.png" alt="كايروهوم">
+                </div>
+                <div class="partner-logo">
+                    <img src="image/partners/boklite.png" alt="بوكليت">
+                </div>
+                <div class="partner-logo">
+                    <img src="image/partners/artyads.png" alt="آرتي آدز">
+                </div>
+                <div class="partner-logo">
+                    <img src="image/partners/karilive.png" alt="كاريلاف">
+                </div>
             </div>
         </div>
     </div>
@@ -244,95 +365,98 @@
 <section class="faq-section" id="faq">
     <div class="container">
         <div class="faq-header">
-            <h3 class="gradient-text">الاستفسارات والأسئلة</h3>
-            <h2 class="section-description">الأسئلة المتداولة (FAQ)</h2>
+            <h3 class="section-title">الاستفسارات والأسئلة</h3>
             <p class="section-subdescription">
                 نحن نقدم مجمعة من الإجابات على الأسئلة الأكثر شيوعا حول الشركة.
             </p>
+            <img src="image/faq.png" alt="faq">
         </div>
         <div class="faq-content">
             <!-- FAQ Item -->
             <div class="faq-item active">
                 <div class="faq-question">
-                    <span class="gradient-text faq-number">01</span>
-                    <h4>ما هو إخوة ديجيتال الرقمية؟</h4>
-                    <i class="fa-solid fa-chevron-up icon-rotate"></i>
+                    <h4>ما هي شبكة إخوة؟</h4>
+                    <i class="fa-solid fa-plus icon-rotate"></i>
                 </div>
                 <div class="faq-answer">
-                    شركة رقمية مغربية تأسست عام 2024، مع فريق متخصص في التكنولوجيا والتصميم لفهم المشهد التجاري وتقديم حلول برمجية وتسويقية مخصصة. نقدم أنظمة ومنتجات ذكية تساعد الشركات على تبسيط العمليات وتحسين الاستراتيجيات الرقمية بما يتماشى مع أهدافها.
+                    شبكة إخوة هي شركة ناشطة في مجال الاستثمار العقاري بالعاصمة الإسماعيلية مكناس وتم تأسيسها سنة 2023.
                 </div>
             </div>
             <!-- FAQ Item -->
             <div class="faq-item">
                 <div class="faq-question">
-                    <span class="gradient-text faq-number">01</span>
-                    <h4>ما هو الشكل والاسم القانوني للشركة؟</h4>
-                    <i class="fa-solid fa-chevron-up icon-rotate"></i>
+                    <h4>ما هو الشكل والاسم القانوني للشبكة؟</h4>
+                    <i class="fa-solid fa-plus icon-rotate"></i>
                 </div>
                 <div class="faq-answer">
-                    شكل الشركة هو شركة ذات مسؤولية محدودة واسمها القانوني هو IKHWA DIGITAL BY IKHWA NETWORK.
+                    الشكل القانوني للشبكة هو شركة ذات مسؤولية مَحدودة مُتعددة الشركاء وهي مُسجلة بالمحكمة التجارية بالعاصمة الإسماعيلية مكناس تحت رقم 59287 والاسم القانوني المُعتمد هو IKHWA NETWORK SARL.
                 </div>
             </div>
             <!-- FAQ Item -->
             <div class="faq-item">
                 <div class="faq-question">
-                    <span class="gradient-text faq-number">02</span>
-                    <h4>ما هي العناوين المُعتمدة للشركة؟</h4>
-                    <i class="fa-solid fa-chevron-up icon-rotate"></i>
+                    <h4>من يُمثل شبكة إخوة قانونيا؟</h4>
+                    <i class="fa-solid fa-plus icon-rotate"></i>
                 </div>
                 <div class="faq-answer">
-                    تتمركز شركة إخوة ديجيتال بالعناوين الآتية:<br>
-                    في مدينة القُنيطرة تقع بـ تقاطع بين شارع أحمد شوقي وشارع محمد غرنيط بلوك C مكتب رقم 7.<br>
-                    في مدينة مكناس لها مكتب تمثيلي بـ فيلا رقم 194 رياض تولال.
+                    المُمثل القانوني لشبكة إخوة هو السيد محمد سعد الراجي وذلك بتفويض من مجلس إدارتها.
                 </div>
             </div>
             <!-- FAQ Item -->
             <div class="faq-item">
                 <div class="faq-question">
-                    <span class="gradient-text faq-number">03</span>
-                    <h4>من الـمُمثل القانوني للشركة؟</h4>
-                    <i class="fa-solid fa-chevron-up icon-rotate"></i>
+                    <h4>أين تتموقع شبكة إخوة؟</h4>
+                    <i class="fa-solid fa-plus icon-rotate"></i>
                 </div>
                 <div class="faq-answer">
-                    يُمثل الشركة السيد محمد سعد الراجي.
+                    شبكة إخوة مُتمركزة بالعاصمة الإسماعيلية مكناس ويقع مقرها الإجتماعي بـ فيلا رقم 194 رياض تولال رقم 1
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!-- End FAQ -->
-<!-- Start Contact -->
+<!-- Start Contact Form Section -->
 <section class="contact-section" id="contact">
     <div class="container">
-        <div class="faq-header">
-            <h3 class="gradient-text">اتصل بنا </h3>
+        <div class="contact-header">
+            <h3 class="section-title">معلومات الاتصال</h3>
             <p class="section-description">
-                لمزيد من المعلومات حول خدماتنا ومنتجاتنا أو لتقديم شكوى، يرجى التواصل معنا عن طريق ملء النموذج     
+                للحصول على المزيد من المعلومات حول خدماتنا ومنتجاتنا أو تقديم شكاية، المرجو التواصل معنا عبر ملء الإستمارة الآتية 
             </p>
         </div>
 
         <div class="contact-content">
             <div class="contact-form">
                 <form>
-                    <div class="mb-3">
+                    <div class="form-row">
+                        <div class="mb-3">
+                        <label for="name" class="form-label">الاسم</label>
                         <input type="text" class="form-control" id="name" placeholder="الاسم">
-                    </div>
-                      <div class="mb-3">
-                        <input type="email" class="form-control" id="email" placeholder="البريد الإلكتروني">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="email" placeholder="البريد الإلكتروني">
+                        </div>
                     </div>
                     <div class="mb-3">
+                        <label for="phone" class="form-label">رقم الهاتف</label>
                         <input type="text" class="form-control" id="phone" placeholder="رقم الهاتف">
                     </div>
-                    <div class="mb-3 file-upload" for="file">
-                        <label for="file">
-                            <i class="fa-solid fa-file"></i>
-                            يرجى إرفاق ملف لا يزيد حجمه عن 2 ميجابايت بأحد التنسيقات التالية: .jpg, .jpeg, .png, .pdf, .xlsx, .docx
-                        </label>
-                        <input class="form-control" type="file" id="file">
+                    <div class="mb-3 file-upload">
+                        <label for="file" class="form-label">الملف</label>
+                        <div class="file-upload-content">
+                            <label for="file" class="file-upload-label">
+                                <i class="fa-solid fa-file"></i>
+                                يرجى إرفاق ملف لا يزيد حجمه عن 2 ميجابايت بأحد التنسيقات التالية: .jpg, .jpeg, .png, .pdf, .xlsx, .docx
+                            </label>
+                            <input class="form-control" type="file" id="file">
+                        </div>
                     </div>
                     <div class="mb-3">
+                        <label for="description" class="form-label">الوصف</label>
                         <textarea class="form-control" id="description" rows="3" placeholder="الوصف"></textarea>
-                        </div>         
+                    </div>         
                     <div class="contact-options">
                         <div class="form-check">
                             <label class="form-check-label custom-radio" for="radio1">
@@ -359,76 +483,79 @@
                     <button type="submit" class="submit-btn">إرسال</button>
                 </form>
             </div>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fa-solid fa-phone"></i>
-                    <div class="contact-text">
-                        <h5 class="fw-semibold">رقم الهاتف</h5>
-                        <p>+96654775155</p>
-                    </div>
+             <div class="contact-info">
+                <div class="info-item">
+                    <strong class="info-label">رقم الهاتف</strong>
+                    <p class="info-value fw-semibold">00212663806725</p>
                 </div>
-
-                <div class="contact-item">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <div class="contact-text">
-                        <h5 class="fw-semibold">WhatsApp</h5>
-                        <p>+96654775155</p>
-                    </div>
+                <div class="info-item">
+                    <strong class="info-label">البريد الإلكتروني</strong>
+                    <p class="info-value">contact@ikhwanetwork.com</p>
                 </div>
-
-                <div class="contact-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div class="contact-text">
-                        <h5 class="fw-semibold">البريد الإلكتروني</h5>
-                        <p>Example@email.com</p>
-                    </div>
+                
+                <div class="info-item">
+                    <strong class="info-label">العنوان</strong>
+                    <p class="info-value">فيلا 194 رياض تولال مكناس 50040</p>
+                </div>
+                <div class="info-item">
+                    <strong class="info-label">توقيت العمل</strong>
+                    <p class="info-value">
+                        يوم الاثنين إلى يوم الجمعة: من الساعة الثامنة صباحا لغاية الساعة الخامسة المساء
+                        <br />
+                        يوم السبت: من الساعة الثامنة إلى الساعة الواحدة
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End Contact -->
-<!-- Start Map -->
-<section class="map-section">
+<!-- End Contact Form Section -->
+<!-- Start Newsletter Section -->
+<section class="newsletter-section">
     <div class="container">
-        <div class="map-header">
-            <h3 class="gradient-text">عرض موقعنا</h3>
-            <p class="section-description">
-                مقرنا الرئيسي موضح بالخريطة التالية
+        <div class="newsletter-content">
+            <h3 class="newsletter-title">المزيد من الأخبار</h3>
+            <p class="newsletter-description">
+                كن أول من يعرف آخر المستجدات، المقالات، المشاريع الجديدة، والعروض الحصرية من شبكة إخوة.
             </p>
         </div>
-        <div id="map"></div>
+        <form>
+            <div class="input-row">
+                <input type="text" class="form-control" id="newsletter" placeholder="أدخل بريدك الإلكتروني">
+            </div>
+            <button type="submit" class="newsletter-button">اشترك</button>
+        </form>
     </div>
 </section>
-<!-- End Map -->
+<!-- End Newsletter Section -->
 <!-- Footer -->
 <footer>
-    <!-- <div class="overlay"></div> -->
+    <a href="index.html#hero">
+        <i class="fa-solid fa-chevron-up btn-top"></i>
+    </a>
     <div class="container">
         <div class="footer-column">
-            <img src="image/white-logo.svg" alt="IKHWA DIGITAL Logo" class="logo">
+            <img src="image/white-logo.svg" alt="IKHWA NETWOTK Logo" class="logo">
         </div>
         <div class="footer-column">
             <h3>معلومات الشركة</h3>
             <div class="text">
                 <p>
-                    إخوة ديجيتال شركة مغربية تندرج ضمن مجموعة شركات إخوة نتوورك، تهتم بمجال البرمجة وتسيير المواقع الإلكترونية بفضل فريق متخصص في تقنيات التصميم والتسويق الرقمي راكم تجربة تفوق 20 سنة في هذا المجال. 
-                </p>
-                <p>
-                    استطعنا بفضل هذه التجربة توسيع مجال معاملاتنا داخل المغرب وخارجه في عدة دول عربية وأجنبية، وحملنا على عاتقنا تحدي الريادة في تقديم الخدمات لزبنائنا ونؤمن جيدا أن ثروتنا الحقيقية هي إرضاء تطلعاتهم.
+                    شركة إخوة نتوورك شركة مغربية تنشط في مجال العقار داخل المغرب وخارجه تستثمر خبرتها التي راكمتها لسنوات في مجال الإنعاش العقاري لتقديم أجود الخدمات لزبنائنا، ويسهر مجلس إدارة الشركة على تحسين هيكلة المعاملات وتعزيز العلاقات مع شركاء استراتجيين في الميدان ليضمن أعلى مستويات الإتقان والجودة والإلتزام وليترك بصمته الخاصة في كل المشاريع التي يحتضنها.
                 </p>
             </div>
         </div>
         <div class="footer-column">
             <h3>روابط سريعة</h3>
             <ul>
-                <li><a href="index.html">الصفحة الرئيسية</a></li>
-                <li><a href="index.html#about">من نحن</a></li>
-                <li><a href="index.html#contact">تواصل معنا</a></li>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="index.html#about">شركتنا</a></li>
                 <li><a href="index.html#services">خدماتنا</a></li>
-                <li><a href="index.html#faq">الأسئلة الشائعة</a></li>
-                <li><a href="index.html#production">الإنتاج</a></li>
+                <li><a href="jobs.html">الوظائف</a></li>
+                <li><a href="index.html#faq">الاستفسارات</a></li>
+                <li><a href="index.html#contact">تواصل معنا</a></li>
             </ul>
+
         </div>
         <div class="footer-column">
             <h3>معلومات</h3>
@@ -450,37 +577,81 @@
             </ul>
         </div>
     </div>
+</footer>
+<div class="copy-right">
     <div class="container">
         <div class="footer-bottom">
-            <a href="#" class="downloads">تنزيل الشعار وكتالوج</a>
-            <p class="copyright">
-                كل الحقوق محفوظة لشركة IKHWA DIGITAL BY IKHWA NETWORK ش.م.م ©   
+            <a href="#" class="downloads">
+                <i class="fa-solid fa-download"></i> 
+                تنزيل الشعار وكتالوج 
+            </a>
+            <p>
+                كل الحقوق محفوظة لشركة IKHWA NETWORK ش.م.م ©   
             </p>
         </div>
     </div>
-</footer>
+</div>
 <!-- / Footer -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKBA_O21juKLxLqolMv58TEbCK-q1tuB0&callback=initializeMap" async defer></script>
-<script>
-    function initializeMap() {
-        const options = {
-            zoom: 16,
-            center: { lat: 33.894917, lng: -5.595111 },
-        };
 
-        const map = new google.maps.Map(document.getElementById('map'), options);
-        const marker = new google.maps.Marker({
-            position: { lat: 33.894917, lng: -5.595111 },
-            map: map,
-        });
-    }
-</script>
 <!-- Load jQuery first -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- Load Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.features-swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    grabCursor: true,
+
+    navigation: {
+      nextEl: '.button-next',
+      prevEl: '.button-prev',
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.services-swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    grabCursor: true,
+
+    navigation: {
+      nextEl: '.button-ser-next',
+      prevEl: '.button-ser-prev',
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+
+});
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
@@ -495,6 +666,6 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
         });
     });
 </script>
-<script src="js/main.js"></script>
+
 </body>
 </html>

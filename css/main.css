@@ -16,68 +16,7 @@ Table of Content
 /* 1. Global layout and resets */
 /* ------------------------------ */
 /* Font: SomarSans */
-@font-face {
-    font-family: 'SomarSans';
-    src: url('/fonts/SomarSans-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SomarSans';
-    src: url('/fonts/SomarSans-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SomarSans';
-    src: url('/fonts/SomarSans-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SomarSans';
-    src: url('/fonts/SomarSans-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SomarSans';
-    src: url('/fonts/SomarSans-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SomarSans';
-    src: url('/fonts/SomarSans-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SomarSans';
-    src: url('/fonts/SomarSans-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SomarSans';
-    src: url('/fonts/SomarSans-ExtraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SomarSans';
-    src: url('/fonts/SomarSans-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
 /* Global Reset */
 
 * {
@@ -88,41 +27,23 @@ Table of Content
 }
 
 :root {
-    --main-font: 'SomarSans', sans-serif;
-    --heading-color: rgba(22, 28, 45, 1);
-    --text-color: rgba(72, 72, 72, 1);
-    --primary-color: rgba(8, 33, 119, 1);
-    --secondary-color: rgba(232, 0, 158, 1);
-    --scroll-margin-top: 160px; 
+    --Primary: rgba(16, 157, 70, 1);
+    --White: rgba(255, 255, 255, 1);
+    --Text: rgba(27, 31, 18, 1);
+    --Paragraph: rgba(84, 84, 84, 1);
+    --Stroke: rgba(182, 185, 193, 1);
+    --Footer: rgba(23, 23, 23, 1);
+    --Input_Text: rgba(115, 119, 129, 1);
+    --Stroke2: rgba(217, 219, 233, 1);
+    --Font: "IBM Plex Sans Arabic", sans-serif;
 }
 
-.gradient-text {
-    background: linear-gradient(90deg, rgba(8,33,119,1) 81%, rgba(232,0,158,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    font-weight: 600;
-    line-height: normal
-}
-
-.section-description {
-    padding-top: 16px;
-    font-weight: 600;
-    font-size: 25px;
-    color: var(--heading-color);
-}
-@media (max-width: 991px) {
-    .section-description {
-        font-size: 17px;
-    }
-}
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--main-font);
+    font-family: var(--Font);
     direction: rtl;
 }
 
@@ -137,7 +58,11 @@ ul {
 }
 
 h1, h2, h3 {
-    color: var(--heading-color);
+    color: var(--Text);
+}
+
+p {
+    color: var(--Paragraph);
 }
 
 button, a {
@@ -160,7 +85,21 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
 	border-radius: 0;
-	background: grey;
+	background: var(--Primary);
+}
+
+/* Component Styles */
+.section-title {
+    margin-bottom: 24px;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 150%; 
+}
+
+.section-description {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 150%; 
 }
 
 /* ------------------------------ */
@@ -222,7 +161,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header .logo img {
-    /* width: 135px; */
     height: 100px;
 }
 
@@ -240,7 +178,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header .mobile-menu .main-nav li a i {
-    color: #1F1F1F;
+    color: var(--Text);
     font-size: 15px;
     margin-right: 5px;
     margin-top: 5px;
@@ -287,14 +225,14 @@ body::-webkit-scrollbar-thumb {
 
 .header .mobile-menu .lang-menu li a {
     text-decoration: none;
-    color: #1F1F1F;
+    color: var(--Text);
     display: block;
     transition: 0.3s, color 0.3s;
 }
 
 .header .mobile-menu .lang-menu li a:hover {
     background: rgba(0, 0, 0, 0.1);
-    color: var(--mainColor);
+    color: var(--Primary);
 }
 
 .header .mobile-menu .lang-dropdown.active .lang-menu {
@@ -304,7 +242,7 @@ body::-webkit-scrollbar-thumb {
 .header .mobile-menu .main-nav > li > a {
     display: flex;
     align-items: center;
-    color: var(--heading-color);
+    color: var(--Text);
     font-weight: 500;
     height: 60px;
     margin: 0 15px;
@@ -315,11 +253,7 @@ body::-webkit-scrollbar-thumb {
     display: none;
     font-size: 20px;
     cursor: pointer;
-    background: linear-gradient(90deg, rgba(8,33,119,1) 0%, rgba(232,0,158,1) 93%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+    color: var(--Primary)
 }
 
 .header .btn-show-nav:hover {
@@ -343,7 +277,7 @@ body::-webkit-scrollbar-thumb {
         bottom: 5px;
         height: 2px;
         width: 0;
-        background: linear-gradient(90.33deg, #082177 0.08%, #E8009E 99.44%);
+        background: var(--Primary);
         transition: all 0.3s ease;
     }
 
@@ -358,7 +292,7 @@ body::-webkit-scrollbar-thumb {
         bottom: 5px;
         height: 2px;
         width: 100%;
-        background: linear-gradient(90.33deg, #082177 0.08%, #E8009E 99.44%);
+        background: var(--Primary);
     }
 }
 
@@ -384,7 +318,7 @@ body::-webkit-scrollbar-thumb {
         right: 22px;
         flex-direction: column;
         align-items: start;
-        background-color: white;
+        background-color: var(--White);
         padding: 10px 20px 20px;
         transform: translateX(100%);
         opacity: 0;
@@ -403,7 +337,7 @@ body::-webkit-scrollbar-thumb {
         flex-direction: column;
         width: 100%;
         align-items: flex-start;
-        background-color: white;
+        background-color: var(--White);
         border-radius: 10px;
     }
 
@@ -417,7 +351,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .header .mobile-menu .main-nav > li > a.active {
-        border-left-color: var(--secondary-color);
+        border-left-color: var(--Primary);
         background: rgba(238, 238, 238, 1);
     }
 
@@ -447,36 +381,38 @@ body::-webkit-scrollbar-thumb {
 /* 6. Footer */
 /* ------------------------------ */
 footer {
-    background-image: url('/image/footer.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     padding: 40px 0;
-    margin: 80px 50px 60px;
-    position: relative;
-    border-radius: 40px;
+    background-color: var(--Footer);
+    position: relative
 }
 
-footer::after {
-    content: "";
+footer .btn-top {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0); 
-    z-index: -1; 
-    border-radius: 40px;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--Primary);
+    border: 8px solid rgba(48, 48, 48, 1);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--White);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 30px;
 }
 
-footer .container:first-child {
+footer .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
 }
+
 .footer-column {
-    flex: 1 1 200px; 
+    flex: 0 1 200px; 
 }
 .footer-column:nth-child(1) {
     flex: 0 0 100px; 
@@ -485,13 +421,13 @@ footer .container:first-child {
     flex: 0 0 300px; 
 }
 footer .footer-column p {
-    color: white;
+    color: var(--White);
 }
 
 footer .footer-column h3 {
     font-size: 21px;
     margin-bottom: 30px;
-    color: white;
+    color: var(--White);
 }
 
 footer .footer-column ul li {
@@ -499,7 +435,7 @@ footer .footer-column ul li {
 }
 
 footer .footer-column ul li a {
-    color: white;
+    color: var(--White);
     position: relative;
     transition: color 0.3s ease;
 }
@@ -511,7 +447,7 @@ footer .footer-column ul li a::before {
     bottom: -10px;
     width: 0;
     height: 2px;
-    background-color: white;
+    background-color: var(--White);
     transition: all 0.3s ease;
 }
 
@@ -523,24 +459,42 @@ footer .social-links li a i {
     margin-left: 10px;
 }
 
-footer .footer-bottom {
-    margin-top: 30px;
+.copy-right {
+    background-color: #1D1D1D;
+    padding: 24px 0;
+}
+
+.copy-right .footer-bottom {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-footer .footer-bottom a,
-footer .footer-bottom .copyright {
-    color: white;
+.copy-right  .footer-bottom a,
+.copy-right  .footer-bottom p {
+    color: var(--White);
 }
 
-footer .footer-bottom .copyright {
+.copy-right  .footer-bottom p {
     margin: 0;
 }
 
-footer .footer-bottom a {
-    text-decoration: underline !important;
+.copy-right  .footer-bottom a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.copy-right  .footer-bottom a i {
+    background: var(--Primary);
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 
 @media (max-width: 992px) {
@@ -551,9 +505,6 @@ footer .footer-bottom a {
 }
 
 @media (max-width: 768px) {
-    footer {
-        margin: 0 5px;
-    }
     .footer-column {
         flex: 1 1 100% !important;
     }
