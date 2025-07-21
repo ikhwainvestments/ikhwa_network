@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IKHWA DIGITAL is a Moroccan company under IKHWA NETWORK Group, specializing in web development and digital marketing. With over 20 years of experience, we serve clients across Morocco and internationally, committed to delivering top-notch digital solutions.">
-    <meta name="keywords" content="IKHWA DIGITAL, Morocco web development, Morocco digital marketing, website management, web design, IKHWA NETWORK, programming, SEO, digital solutions, brand identity">
-    <meta name="author" content="IKHWA DIGITAL Team">
-    <title>IKHWA DIGITAL - Your Ideal Partner for Digital Innovation</title>
+    
+    <meta name="description" content="Ikhwa Network is a Moroccan real estate company operating domestically and internationally, leveraging extensive expertise in property development to deliver premium services with unwavering commitment to quality and excellence.">
+    <meta name="keywords" content="Ikhwa Network, Moroccan real estate, property investment, real estate projects, property development, Morocco, construction, real estate marketing">
+    <meta name="author" content="Ikhwa Network Board of Directors">
+    <title>Ikhwa Network | Pioneering Real Estate Investment and Development in Morocco and Beyond</title>
+
+    <!-- Open Graph Meta Tags (for social media) -->
+    <meta property="og:title" content="Ikhwa Network | Pioneering Real Estate Investment and Development in Morocco and Beyond">
+    <meta property="og:description" content="Ikhwa Network is a Moroccan real estate specialist committed to delivering premium services and establishing strategic partnerships to ensure quality and excellence in property development.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../image/company-logo-or-project-image.jpg">
+    <meta property="og:url" content="https://ikhwanetwork.com">
+
     <link rel="icon" href="../image/white-logo.svg" sizes="32x32"/>
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/ltr_style.css">
@@ -21,23 +31,23 @@
 <div class="header" id="header">
   <div class="container">
     <!-- Logo -->
-    <a class="logo" href="../index.html">
-      <img src="../image/logo.png" alt="IKHWA DIGITAL Logo" class="logo-img">
+    <a class="logo" href="index.html">
+      <img src="../image/logo.png" alt="IKHWA NETWORK Logo" class="logo-img">
     </a>
 
     <div class="mobile-menu">
-    <!-- links  -->
-      <ul class="main-nav">
+    <!-- Navigation Links -->
+    <ul class="main-nav">
         <li><a href="index.html" class="nav-home active">Home</a></li>
-        <li><a href="index.html#about" class="nav-about">About Us</a></li>
-        <li><a href="index.html#services" class="nav-services">Our Services</a></li>
-        <li><a href="index.html#faq" class="nav-faq">FAQs</a></li>
-        <li><a href="production.html" class="nav-production">Production</a></li>
+        <li><a href="index.html#about" class="nav-about">Our Company</a></li>
+        <li><a href="index.html#services" class="nav-services">Services</a></li>
         <li><a href="partners.html" class="nav-partners">Partners</a></li>
+        <li><a href="jobs.html" class="nav-jobs">Careers</a></li>
+        <li><a href="index.html#faq" class="nav-faq">FAQs</a></li>
         <li><a href="index.html#contact" class="nav-contact">Contact Us</a></li>
-      </ul>
+    </ul>
 
-      <!-- language dropdown -->
+      <!-- Language Dropdown -->
       <div class="lang-dropdown">
         <button class="lang-btn">
           <i class="fa-solid fa-globe"></i>
@@ -45,7 +55,7 @@
         </button>
         <ul class="lang-menu">
           <li><a href="../index.html">Arabic (AR)</a></li>
-          <li><a href="../fr/index.html">French (FR)</a></li>
+          <li><a href="../fr/index.html">Français (FR)</a></li>
         </ul>
       </div>
     </div>
@@ -54,285 +64,404 @@
   </div>
 </div>
 <!-- / Header -->
-<!-- Hero -->
+
+<!-- Hero Section -->
 <div class="hero" id="hero">
     <div class="container">
-        <div class="hero-content">
-            <h2 class="gradient-text">IKHWA DIGITAL</h2>
-            <h1 class="section-description">Let's build the digital space you deserve</h1>
-        </div>
-        <div class="statistic">
-            <div class="content">
-                <div class="statistic-item">
-                    <h2>50+</h2>
-                    <p>Completed Projects</p>
-                </div>
-                <div class="statistic-item">
-                    <h2>20+</h2>
-                    <p>Satisfied Clients</p>
-                </div>
-                <div class="statistic-item">
-                    <h2>4+</h2>
-                    <p>Countries Served</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- / Hero -->
-<!-- About Us -->
-<div class="about" id="about">
-    <div class="container">
-        <div class="about-content">
-            <h2 class="gradient-text">About Us</h2>
-            <h1 class="section-description">
-                Hub for Innovative Digital Solutions 
+        <div class="wrapper">
+            <h1>
+            Building Your Dream Homes, Partnering in Your Vision
             </h1>
             <p>
-                IKHWA DIGITAL is a Moroccan company part of IKHWA NETWORK Group, specializing in programming and website management with a team experienced in design technologies and digital marketing, boasting over 20 years of expertise in the field.
+                Discover real estate opportunities that exceed expectations - we're here to bring your vision to life
             </p>
-            <p>
-                Our experience has enabled us to expand our operations within Morocco and internationally to several Arab and foreign countries. We've taken on the challenge of leadership in serving our clients, firmly believing that our true wealth lies in fulfilling their aspirations.
-            </p>
-        </div>
-        <div class="about-image">
-            <img src="../image/about.svg" alt="About Us Image">
+            <a href="index.html#services">Explore Our Services</a>
         </div>
     </div>
 </div>
-<!-- / About Us -->
-<!-- Start Services -->
-<section class="services-section" id="services">
-    <div class="container">
-        <h2 class="gradient-text">Our Technical and Marketing Services</h2>
-        <p class="section-description">
-            Providing digital programs and platforms that enhance corporate information strategies and develop their commercial operations
+<!-- End Hero -->
+
+<!-- About Company Section -->
+<section class="about-company-section" id="about">
+	<div class="container">
+		<div class="about-company-grid">
+			<div class="about-company-image">
+				<img src="../image/about_right.png" alt="Houses on coins">
+			</div>
+
+			<div class="about-company-content">
+				<h2 class="section-title">About Our Company</h2>
+				<p class="section-description">
+                    Ikhwa Network is a Moroccan real estate company operating domestically and internationally. We leverage our years of accumulated expertise in property development to deliver premium services to our clients. Our board of directors continuously works to enhance transaction structures and strengthen relationships with strategic field partners, ensuring the highest levels of craftsmanship, quality, and commitment while leaving our distinctive mark on every project we undertake.
+                </p>
+
+				<div class="about-company-stats">
+					<div class="stat-item">
+						<span class="stat-number">+250</span>
+						<span class="stat-label">Property Consultations</span>
+					</div>
+					<div class="stat-item">
+						<span class="stat-number">100%</span>
+						<span class="stat-label">Quality Focus</span>
+					</div>
+					<div class="stat-item">
+						<span class="stat-number">+100</span>
+						<span class="stat-label">Trusted Partners</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="about-company-image">
+				<img src="../image/about_left.png" alt="Handshake Image">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End About -->
+
+<!-- CEO Message Section -->
+<div class="ceo-message-section" id="ceo-message">
+    <div class="dd"></div>
+	<div class="container">
+		<h2 class="section-title">Message from the CEO</h2>
+		<p>It's my pleasure to welcome you to Ikhwa Network, the Moroccan real estate development company with over 20 years of accumulated experience.</p>
+		<p>Since our founding, we've implemented policies grounded in scientific, field, and managerial expertise, channeling all professional and administrative capabilities to deliver premium real estate products. We assure our clients of our commitment to every contractual agreement.</p>
+        <p>At Ikhwa Network, we recognize our profound responsibility toward our nation and clients. We believe each project we undertake isn't just a transaction but the beginning of professional relationships built on trust, commitment, and excellent management. Our experience has shown that product quality ensures economic returns for all contracting parties and strengthens our position in the competitive real estate market.</p>
+        <p>We consider business and real estate management an art requiring creativity and innovation, which drives us to continually develop our competencies and field operations while implementing strategic plans that secure our future position.</p>
+        <p>In closing, I extend my deepest gratitude to our valued clients, shareholders, and all board members for their trust and ongoing support. Special thanks to our field teams - engineers, technicians, and workers - for their dedication in translating our vision into reality while maintaining our standards of quality and excellence.</p>
+        <p class="ceo-signature">
+            Mohamed Saad Raji
+            <br>
+            Chairman of the Executive Board
         </p>
+	</div>
+    <div class="board-message-section">
+	<div class="container">
+		<div class="board-message-box">
+			<h2 class="section-title">Board of Directors: (Ethical Management & Flexible Approach)</h2>
+			<p class="section-description">
+                The board members of Ikhwa Network are committed to contributing to the noble vision of His Majesty King Mohammed VI (may God preserve him) by participating in strengthening and developing the national economy, particularly in real estate as a key driver of development. We're equally committed to establishing sound client relationships, protecting their projects, and safeguarding company assets and investments.
+            </p>
+		</div>
+        <img src="../image/ceo/place.png" alt="Board meeting">
+	</div>
+</div>
+</div>
+<!-- End CEO Message -->
 
-        <div class="services-grid">
-            <div class="service-card">
-                <img src="../image/services/branding-icon.png" alt="Brand Identity" class="service-icon">
-                <h4 class="service-title">Brand Identity</h4>
-                <p class="service-description">
-                    We ensure comprehensive digital identity and high-quality technical services for our clients, from concept to graphic design
-                </p>
+<!-- Company Strategy Section -->
+<div class="company-strategy-section">
+	<div class="container">
+		<div class="strategy-content">
+			<div class="strategy-text">
+				<h2 class="section-title">Our Strategy</h2>
+				<div class="section-description">
+					<p>
+						Our management conducts ongoing field studies and research on real estate market dynamics and construction requirements to develop strategies aligned with economic partners and create our distinctive niche in real estate services for both short and long terms.
+					</p>
+					<p>
+						Our strategy is built on key principles including:
+					</p>
+				</div>
+				<div class="strategy-principles-grid">
+					<div class="principle-card">
+						<div class="icon">
+                            <img src="../image/strategy/icon1.png" alt="Financial Management">
+                        </div>
+						<p>Precise financial management for projects and smart initiatives</p>
+					</div>
+					<div class="principle-card">
+						<div class="icon">
+                            <img src="../image/strategy/icon2.png" alt="HR Model">
+                        </div>
+						<p>Certified human resources management model</p>
+					</div>
+					<div class="principle-card">
+						<div class="icon">
+                            <img src="../image/strategy/icon4.png" alt="Leadership">
+                        </div>
+						<p>Achieving leadership in real estate services</p>
+					</div>
+					<div class="principle-card">
+						<div class="icon">
+                            <img src="../image/strategy/icon3.png" alt="Development">
+                        </div>
+						<p>Management and development of diverse properties</p>
+					</div>
+				</div>
+			</div>
+            <div class="strategy-image">
+				<img src="../image/strategy/company-strategy.png" alt="Building blueprint and properties">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Company Strategy -->
+
+<!-- Key Features Section -->
+<div class="features-section">
+    <div class="container">
+        <div class="features-header">
+            <h2 class="section-title">What Sets Us Apart</h2>
+            <p class="section-description">
+                At Ikhwa Network, we believe real estate is both an art and a commitment. That's why we provide comprehensive real estate experiences that meet your aspirations. We guarantee quality and ideal housing at satisfying costs, supported by clear vision and a team with deep field expertise. Our experience makes us industry leaders, and we continue innovating to deliver real investment value that enhances quality of life.
+            </p>
+        </div>
+        <div class="features-navigation">
+            <div class="button-next">
+                <i class="fa-solid fa-chevron-right"></i>
             </div>
-
-            <div class="service-card">
-                <img src="../image/services/marketing-icon.png" alt="Marketing" class="service-icon">
-                <h4 class="service-title">Marketing</h4>
-                <p class="service-description">
-                    We enhance your digital presence through our expertise in photography, production, content creation, and social media management
-                </p>
-            </div>
-
-            <div class="service-card">
-                <img src="../image/services/app-icon.png" alt="App Development" class="service-icon">
-                <h4 class="service-title">App Development</h4>
-                <p class="service-description">
-                    Developing high-quality software and mobile applications accompanied by effective security systems and technical/administrative services
-                </p>
-            </div>
-
-            <div class="service-card">
-                <img src="../image/services/graphics-icon.png" alt="Photography & Production" class="service-icon">
-                <h4 class="service-title">Photography & Production</h4>
-                <p class="service-description">
-                    We produce professional visual content that reflects your aspirations with high quality, translating client desires and meeting audience needs
-                </p>
-            </div>
-
-            <div class="service-card">
-                <img src="../image/services/web-icon.png" alt="Web Design & Development" class="service-icon">
-                <h4 class="service-title">Web Design & Development</h4>
-                <p class="service-description">
-                    We design and develop customized websites with full management, from landing pages to e-commerce solutions
-                </p>
-            </div>
-
-            <div class="service-card">
-                <img src="../image/services/social-icon.png" alt="Social Media Content" class="service-icon">
-                <h4 class="service-title">Social Media Content</h4>
-                <p class="service-description">
-                    We ensure a strong presence for your brand on social platforms and help increase engagement on your pages
-                </p>
+            <div class="button-prev">
+                <i class="fa-solid fa-chevron-left"></i> 
             </div>
         </div>
     </div>
-</section>
+    <div class="container">
+        <div>
+            <div class="features-swiper swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon">
+                            <img src="../image/features/icon1.png" alt="Vision">
+                        </div>
+                        <h3 class="feature-title">Our Vision</h3>
+                        <p class="feature-description">Creating a distinctive mark in the real estate market and strengthening client trust in our services</p>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon">
+                            <img src="../image/features/icon2.png" alt="Mission">
+                        </div>
+                        <h3 class="feature-title">Our Mission</h3>
+                        <p class="feature-description">Managing real estate projects with innovative techniques and global standards that position us as market leaders.</p>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon">
+                            <img src="../image/features/icon4.png" alt="Efficiency">
+                        </div>
+                        <h3 class="feature-title">Efficiency</h3>
+                        <p class="feature-description">Guaranteed through a cohesive, highly experienced team with continuous professional training and advanced operational mechanisms.</p>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon">
+                            <img src="../image/features/icon3.png" alt="Values">
+                        </div>
+                        <h3 class="feature-title">Our Values</h3>
+                        <p class="feature-description">Rooted in our belief in professional commitment as the cornerstone of client contracts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Features -->
+
+<!-- Services Section -->
+<div class="our-services-section" id="services">
+    <div class="container">
+        <div class="services-header">
+            <div class="text">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">
+                    We provide comprehensive services in real estate investment and property management across Morocco
+                </p>
+            </div>
+            <div class="services-navigation">
+                <div class="button-ser-next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="button-ser-prev">
+                    <i class="fa-solid fa-chevron-left"></i> 
+                </div>
+            </div>
+        </div>
+        <!-- Services Slider -->
+        <div class="swiper services-swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide service-card card1">
+                    <div class="service-number">01</div>
+                    <h3 class="service-title">Property Consultations</h3>
+                    <p class="service-description">
+                        Reviewing property ownership files, rental contracts, property asset audits, and restructuring real estate portfolios.
+                    </p>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide service-card card2">
+                    <img src="../image/services/card2.png" alt="Investment projects">
+                    <div class="service-number">02</div>
+                    <h3 class="service-title">Investment Project Studies</h3>
+                    <p class="service-description">
+                        Including market research, feasibility studies, architectural designs, and project financial structure analysis.
+                    </p>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide service-card card3">
+                    <img src="../image/services/card3.png" alt="Construction">
+                    <div class="service-number">03</div>
+                    <h3 class="service-title">Project Construction & Development</h3>
+                    <p class="service-description">
+                        In coordination with Karihome (an Ikhwa Network company), we offer exceptional construction and property development services meeting high-quality standards while fully respecting client preferences.
+                    </p>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide service-card card4">
+                    <div class="service-number">04</div>
+                    <h3 class="service-title">Real Estate Marketing</h3>
+                    <p class="service-description">
+                        Through Ikhwa Digital (an Ikhwa Network subsidiary), we provide digital marketing for real estate projects by creating websites and digital commercial platforms.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- End Services Slider -->
+    </div>
+</div>
 <!-- End Services -->
-<!-- Start Why Choose Us -->
-<section class="why-choose-us-section" id="why-choose-us">
-    <div class="container">
-        <h2 class="gradient-text">Why Choose Us?</h2>
-        <p class="section-description">
-            IKHWA DIGITAL is the optimal choice for creating your digital content and boosting your commercial transactions. We're your permanent partner in an increasingly advanced digital world
-        </p>
 
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <img src="../image/why_choose_us/team-icon.png" alt="Our Team">
-                </div>
-                <div class="feature-content">
-                    <h4 class="feature-title">Our Team</h4>
-                    <p class="feature-description">
-                        A professional team open to both local and international competencies
-                    </p>
-                </div>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <img src="../image/why_choose_us/vision-icon.png" alt="Our Vision">
-                </div>
-                <div class="feature-content">
-                    <h4 class="feature-title">Our Vision</h4>
-                    <p class="feature-description">
-                        Satisfying our clients and expanding their operations to become marketing leaders
-                    </p>
-                </div>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <img src="../image/why_choose_us/mission-icon.png" alt="Our Mission & Values">
-                </div>
-                <div class="feature-content">
-                    <h4 class="feature-title">Our Mission & Values</h4>
-                    <p class="feature-description">
-                        Exceptional and professional digital management for your projects, with honesty and commitment as our contractual foundation
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Why Choose Us -->
-<!-- Start Partners -->
+<!-- Partners Section -->
 <section class="partners-section" id="partners">
     <div class="container">
-        <h3 class="gradient-text">Our Partners</h3>
-        <p class="section-description">
-            They provide genuine support for us and our clients. We constantly strive to create an atmosphere of cooperation and knowledge exchange to ensure the success of our clients' projects and strengthen their presence in the commercial market
-        </p>
+        <div class="image">
+            <img src="../image/partners/backgound-section.png" alt="Partners background">
+        </div>
+        <div class="partners-content">
+            <h3 class="section-title">Our Partners</h3>
+            <p class="section-description">
+                They provide genuine support for us and our clients. We continuously foster collaborative environments and knowledge exchange to ensure our clients' project success and strengthen their presence in commercial transactions.
+            </p>
 
-        <div class="partners-logos">
-            <div class="partner-logo">
-                <img src="../image/partners/ikhwa_network.png" alt="IKHWA NETWORK">
-            </div>
-            <div class="partner-logo">
-                <img src="../image/partners/ihkwa_invesments.png" alt="IKHWA INVESTMENTS">
-            </div>
-            <div class="partner-logo">
-                <img src="../image/partners/karihome.png" alt="KARIHOME">
-            </div>
-            <div class="partner-logo">
-                <img src="../image/partners/boklite.png" alt="BOKLITE">
-            </div>
-            <div class="partner-logo">
-                <img src="../image/partners/artyads.png" alt="ARTY ADS">
-            </div>
-            <div class="partner-logo">
-                <img src="../image/partners/karilive.png" alt="KARILIVE">
+            <div class="partners-logos">
+                <div class="partner-logo">
+                    <img src="../image/partners/ikhwa_network.png" alt="Ikhwa Network">
+                </div>
+                <div class="partner-logo">
+                    <img src="../image/partners/ihkwa_invesments.png" alt="Ikhwa Investments">
+                </div>
+                <div class="partner-logo">
+                    <img src="../image/partners/karihome.png" alt="Karihome">
+                </div>
+                <div class="partner-logo">
+                    <img src="../image/partners/boklite.png" alt="Boklite">
+                </div>
+                <div class="partner-logo">
+                    <img src="../image/partners/artyads.png" alt="Arty Ads">
+                </div>
+                <div class="partner-logo">
+                    <img src="../image/partners/karilive.png" alt="KariLive">
+                </div>
             </div>
         </div>
     </div>
 </section>
 <!-- End Partners -->
-<!-- Start FAQ -->
+
+<!-- FAQ Section -->
 <section class="faq-section" id="faq">
     <div class="container">
         <div class="faq-header">
-            <h3 class="gradient-text">Inquiries</h3>
-            <h2 class="section-description">Frequently Asked Questions (FAQ)</h2>
+            <h3 class="section-title">Frequently Asked Questions</h3>
             <p class="section-subdescription">
-                We provide answers to the most common questions about our company
+                We've compiled answers to the most common questions about our company.
             </p>
+            <img src="../image/faq.png" alt="FAQ illustration">
         </div>
         <div class="faq-content">
             <!-- FAQ Item -->
             <div class="faq-item active">
                 <div class="faq-question">
-                    <span class="gradient-text faq-number">01</span>
-                    <h4>What is IKHWA DIGITAL?</h4>
-                    <i class="fa-solid fa-chevron-up icon-rotate"></i>
+                    <h4>What is Ikhwa Network?</h4>
+                    <i class="fa-solid fa-plus icon-rotate"></i>
                 </div>
                 <div class="faq-answer">
-                    A Moroccan digital company established in 2024, with a specialized team in technology and design to understand the business landscape and provide customized software and marketing solutions. We offer smart systems and products that help companies streamline operations and improve digital strategies aligned with their goals.
+                    Ikhwa Network is a real estate investment company operating in Meknes, the Ismaili capital, established in 2023.
                 </div>
             </div>
             <!-- FAQ Item -->
             <div class="faq-item">
                 <div class="faq-question">
-                    <span class="gradient-text faq-number">02</span>
-                    <h4>What is the company's legal form and name?</h4>
-                    <i class="fa-solid fa-chevron-up icon-rotate"></i>
+                    <h4>What is the company's legal structure and name?</h4>
+                    <i class="fa-solid fa-plus icon-rotate"></i>
                 </div>
                 <div class="faq-answer">
-                    The company is a limited liability company (SARL) with the legal name IKHWA DIGITAL BY IKHWA NETWORK.
+                    The company is a multi-partner limited liability company registered at the Meknes Commercial Court under number 59287, with the official legal name IKHWA NETWORK SARL.
                 </div>
             </div>
             <!-- FAQ Item -->
             <div class="faq-item">
                 <div class="faq-question">
-                    <span class="gradient-text faq-number">03</span>
-                    <h4>What are the company's official addresses?</h4>
-                    <i class="fa-solid fa-chevron-up icon-rotate"></i>
+                    <h4>Who legally represents Ikhwa Network?</h4>
+                    <i class="fa-solid fa-plus icon-rotate"></i>
                 </div>
                 <div class="faq-answer">
-                    IKHWA DIGITAL is located at:<br>
-                    In Kenitra: Intersection of Ahmed Shawky Street and Mohamed Gharnit Street, Block C, Office No. 7<br>
-                    In Meknes: Representative office at Villa No. 194, Riyad Toulal
+                    The legal representative is Mr. Mohamed Saad Raji, authorized by the board of directors.
                 </div>
             </div>
             <!-- FAQ Item -->
             <div class="faq-item">
                 <div class="faq-question">
-                    <span class="gradient-text faq-number">04</span>
-                    <h4>Who is the company's legal representative?</h4>
-                    <i class="fa-solid fa-chevron-up icon-rotate"></i>
+                    <h4>Where is Ikhwa Network located?</h4>
+                    <i class="fa-solid fa-plus icon-rotate"></i>
                 </div>
                 <div class="faq-answer">
-                    The company is represented by Mr. Mohamed Saad Al-Raji.
+                    Ikhwa Network is headquartered in Meknes at Villa 194, Riyad Toulal No. 1.
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!-- End FAQ -->
-<!-- Start Contact -->
+
+<!-- Contact Form Section -->
 <section class="contact-section" id="contact">
     <div class="container">
-        <div class="faq-header">
-            <h3 class="gradient-text">Contact Us</h3>
+        <div class="contact-header">
+            <h3 class="section-title">Contact Information</h3>
             <p class="section-description">
-                For more information about our services and products or to submit a complaint, please contact us by filling out the form     
+                For more information about our services and products or to submit a complaint, please contact us by filling out the following form.
             </p>
         </div>
 
         <div class="contact-content">
             <div class="contact-form">
                 <form>
-                    <div class="mb-3">
+                    <div class="form-row">
+                        <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
                         <input type="text" class="form-control" id="name" placeholder="Name">
-                    </div>
-                      <div class="mb-3">
-                        <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
                     </div>
                     <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
                         <input type="text" class="form-control" id="phone" placeholder="Phone Number">
                     </div>
-                    <div class="mb-3 file-upload" for="file">
-                        <label for="file">
-                            <i class="fa-solid fa-file"></i>
-                            Please attach a file (max 2MB) in one of these formats: .jpg, .jpeg, .png, .pdf, .xlsx, .docx
-                        </label>
-                        <input class="form-control" type="file" id="file">
+                    <div class="mb-3 file-upload">
+                        <label for="file" class="form-label">File</label>
+                        <div class="file-upload-content">
+                            <label for="file" class="file-upload-label">
+                                <i class="fa-solid fa-file"></i>
+                                Please attach a file (max 2MB) in one of these formats: .jpg, .jpeg, .png, .pdf, .xlsx, .docx
+                            </label>
+                            <input class="form-control" type="file" id="file">
+                        </div>
                     </div>
                     <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
                         <textarea class="form-control" id="description" rows="3" placeholder="Description"></textarea>
-                        </div>         
+                    </div>         
                     <div class="contact-options">
                         <div class="form-check">
                             <label class="form-check-label custom-radio" for="radio1">
@@ -356,66 +485,70 @@
                             <label for="radio3">Complaint</label>
                         </div>
                     </div>
-                    <button type="submit" class="submit-btn">Send</button>
+                    <button type="submit" class="submit-btn">Submit</button>
                 </form>
             </div>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fa-solid fa-phone"></i>
-                    <div class="contact-text">
-                        <h5 class="fw-semibold">Phone</h5>
-                        <p>+96654775155</p>
-                    </div>
+             <div class="contact-info">
+                <div class="info-item">
+                    <strong class="info-label">Phone Number</strong>
+                    <p class="info-value fw-semibold">00212663806725</p>
                 </div>
-
-                <div class="contact-item">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <div class="contact-text">
-                        <h5 class="fw-semibold">WhatsApp</h5>
-                        <p>+96654775155</p>
-                    </div>
+                <div class="info-item">
+                    <strong class="info-label">Email</strong>
+                    <p class="info-value">contact@ikhwanetwork.com</p>
                 </div>
-
-                <div class="contact-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div class="contact-text">
-                        <h5 class="fw-semibold">Email</h5>
-                        <p>Example@email.com</p>
-                    </div>
+                
+                <div class="info-item">
+                    <strong class="info-label">Address</strong>
+                    <p class="info-value">Villa 194, Riyad Toulal, Meknes 50040</p>
+                </div>
+                <div class="info-item">
+                    <strong class="info-label">Working Hours</strong>
+                    <p class="info-value">
+                        Monday to Friday: 8:00 AM to 5:00 PM
+                        <br />
+                        Saturday: 8:00 AM to 1:00 PM
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End Contact -->
-<!-- Start Map -->
-<section class="map-section">
+<!-- End Contact Form Section -->
+
+<!-- Newsletter Section -->
+<section class="newsletter-section">
     <div class="container">
-        <div class="map-header">
-            <h3 class="gradient-text">Our Location</h3>
-            <p class="section-description">
-                Our headquarters is shown on the following map
+        <div class="newsletter-content">
+            <h3 class="newsletter-title">Stay Updated</h3>
+            <p class="newsletter-description">
+                Be the first to know about our latest news, articles, new projects, and exclusive offers from Ikhwa Network.
             </p>
         </div>
-        <div id="map"></div>
+        <form>
+            <div class="input-row">
+                <input type="text" class="form-control" id="newsletter" placeholder="Enter your email">
+            </div>
+            <button type="submit" class="newsletter-button">Subscribe</button>
+        </form>
     </div>
 </section>
-<!-- End Map -->
+<!-- End Newsletter Section -->
+
 <!-- Footer -->
 <footer>
-    <!-- <div class="overlay"></div> -->
+    <a href="index.html#hero">
+        <i class="fa-solid fa-chevron-up btn-top"></i>
+    </a>
     <div class="container">
         <div class="footer-column">
-            <img src="../image/white-logo.svg" alt="IKHWA DIGITAL Logo" class="logo">
+            <img src="../image/white-logo.svg" alt="IKHWA NETWORK Logo" class="logo">
         </div>
         <div class="footer-column">
             <h3>Company Information</h3>
             <div class="text">
                 <p>
-                    IKHWA DIGITAL is a Moroccan company under IKHWA NETWORK Group, specializing in programming and website management with a team experienced in design technologies and digital marketing, boasting over 20 years of expertise in the field.
-                </p>
-                <p>
-                    Our experience has enabled us to expand our operations within Morocco and internationally to several countries, taking on the challenge of leadership in serving our clients and firmly believing that our true wealth lies in fulfilling their aspirations.
+                    Ikhwa Network is a Moroccan real estate company operating domestically and internationally, leveraging years of accumulated expertise in property development to deliver premium services. Our board of directors continuously works to enhance transaction structures and strengthen relationships with strategic field partners, ensuring the highest levels of craftsmanship, quality, and commitment while leaving our distinctive mark on every project.
                 </p>
             </div>
         </div>
@@ -423,11 +556,11 @@
             <h3>Quick Links</h3>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About Us</a></li>
-                <li><a href="index.html#contact">Contact Us</a></li>
-                <li><a href="index.html#services">Our Services</a></li>
+                <li><a href="index.html#about">Our Company</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="jobs.html">Careers</a></li>
                 <li><a href="index.html#faq">FAQs</a></li>
-                <li><a href="production.html">Production</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
             </ul>
         </div>
         <div class="footer-column">
@@ -450,37 +583,80 @@
             </ul>
         </div>
     </div>
+</footer>
+<div class="copy-right">
     <div class="container">
         <div class="footer-bottom">
-            <a href="#" class="downloads">Download Logo & Catalog</a>
-            <p class="copyright">
-                All rights reserved to IKHWA DIGITAL BY IKHWA NETWORK SARL ©   
+            <a href="#" class="downloads">
+                <i class="fa-solid fa-download"></i> 
+                Download Logo & Catalog 
+            </a>
+            <p>
+                All rights reserved © IKHWA NETWORK SARL   
             </p>
         </div>
     </div>
-</footer>
+</div>
 <!-- / Footer -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKBA_O21juKLxLqolMv58TEbCK-q1tuB0&callback=initializeMap" async defer></script>
-<script>
-    function initializeMap() {
-        const options = {
-            zoom: 16,
-            center: { lat: 33.894917, lng: -5.595111 },
-        };
 
-        const map = new google.maps.Map(document.getElementById('map'), options);
-        const marker = new google.maps.Marker({
-            position: { lat: 33.894917, lng: -5.595111 },
-            map: map,
-        });
-    }
-</script>
-<!-- Load jQuery first -->
+<!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Load Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.features-swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    grabCursor: true,
+
+    navigation: {
+      nextEl: '.button-next',
+      prevEl: '.button-prev',
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.services-swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    grabCursor: true,
+
+    navigation: {
+      nextEl: '.button-ser-next',
+      prevEl: '.button-ser-prev',
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+
+});
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
@@ -495,6 +671,6 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
         });
     });
 </script>
-<script src="../js/main.js"></script>
+
 </body>
 </html>

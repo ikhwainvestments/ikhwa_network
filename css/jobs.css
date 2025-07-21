@@ -23,21 +23,31 @@
     gap: 60px;
 }
 
+.hero-section .hero-content {
+    max-width: 650px;
+}
+
 /* Media Queries */
+@media (max-width: 1200px) {
+    .hero-section .hero-content {
+        max-width: 450px;
+    }
+        
+}
 /* 991px */
 @media (max-width: 991px) {
-    .hero-section {
-        height: 90vh;
-    }
     .hero-section .container {
         flex-direction: column;
+    }
+    .hero-section .hero-content {
+        max-width: 100%;
     }
 }
 
 /* 991px */
 @media (max-width: 768px) {
     .hero-section {
-        height: 70vh;
+        height: 80vh;
         background-size: 294%;
         background-position: 0;
     }

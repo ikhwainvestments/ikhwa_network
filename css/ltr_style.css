@@ -48,10 +48,124 @@ footer .social-links li a i {
 ==============================================
 */
 /* Start Hero */
-.hero .statistic {
-    background-position: 0;
-}   
+.hero {
+    background-image: url("../image/hero_en.png");
+    
+} 
 /* End Hero */
+
+/* Start about */
+.about-company-grid .about-company-content .about-company-stats .stat-item {
+    align-items: flex-start;
+}
+@media (max-width: 1200px) {
+    .about-company-grid .about-company-image:last-child img {
+        right: 0;
+        left: auto;
+    }
+}
+@media (max-width: 768px) {
+    .about-company-grid .about-company-image:last-child img {
+        display: none;
+    }
+}
+/* End about */
+
+/* Start Company Strategy Section */
+.company-strategy-section .strategy-image {
+    right: 0;
+    left: auto;
+}
+
+.company-strategy-section .strategy-image::after {
+    left: auto;
+    right: 0;
+}
+
+.company-strategy-section .strategy-image::before {
+    left: -55px;
+    right: auto;
+}
+@media (max-width: 768px) {
+    .company-strategy-section .strategy-image::after {
+        left: 0;
+        right: auto;
+    }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+    .company-strategy-section .strategy-image img {
+        width: 70%;
+        margin-right: 0;
+        margin-left: auto;
+    }
+}
+
+/* End Company Strategy Section */
+
+/* Start Services Section */
+.our-services-section .services-header .services-navigation {
+    flex-direction: row-reverse;
+}
+/* End Services Section */
+
+/* StartFeatures Section */
+.features-section .features-navigation {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.features-section .features-swiper .feature-card {
+    height: 350px;
+}
+/* End Features Section */
+
+/* Partners Section */
+.partners-section .container {
+    flex-direction: row-reverse;
+}
+
+.partners-content {
+    max-width: 600px;
+}
+
+.partners-section .container {
+    flex-direction: row-reverse;
+}
+.partners-section .image img {width: 40%;}
+
+@media (max-width: 1200px) {
+    .partners-section .partners-content {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 991px) {
+    .partners-section .container {
+        flex-direction: column;
+    }
+    .partners-section .partners-content {
+        max-width: 100%;
+        order: -1;
+    }
+    .partners-section .image img {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+/* Partners Section */
+
+/* Start faq Section */
+@media (max-width: 768px) {
+    .faq-section {
+        min-height: 750px;
+    }
+
+    .faq-section::before {
+        top: 40%;
+        height: 943px;
+    }
+}
+/* End faq Section */
 
 /* Start Contact */
 .contact-section .contact-content {
@@ -73,6 +187,16 @@ footer .social-links li a i {
 .contact-section .contact-content .contact-info p {
     direction: ltr;
 }
+
+.contact-section .contact-info .info-item .info-label::before {
+    right: auto;
+    left: 0;
+}
+@media (max-width: 991px) {
+    .contact-section .contact-content .contact-info {
+        align-self: flex-end;
+    }
+}
 /* End Contact */
 
 /* Start FAQ */
@@ -80,33 +204,20 @@ footer .social-links li a i {
     font-size: 20px;
 }
 /* End FAQ */
+
+
 /* 
-==================================================
-================= Production.html =================
-==================================================
+==============================================
+================= Partners.html =================
+==============================================
 */
-/* Start Production Services */
-.production-services-section .swiper-arrows {
-    flex-direction: row-reverse;
+.company-slider-section .swiper-slide {
+    min-height: 700px;
 }
-
-.production-process-section .process-steps .process-step .step-number {
-    margin-right: 50px;
-    margin-left: auto;
-}
-
-@media (max-width: 991px) {
-    .production-process-section .process-steps .process-step .step-number {
-        margin-right: 5px;
-        margin-left: auto;
+@media (max-width: 768px) {
+    .swiper-pagination.swiper-pagination-horizontal {
+        bottom: 230px;
     }
 }
-/* End Production Services */
 
 
-/* Start Companies Grid */
-.companies-grid .company-card .content .company-footer i {
-    transform: rotate(180deg);
-}
-
-/* End Companies Grid */

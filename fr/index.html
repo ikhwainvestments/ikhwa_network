@@ -3,49 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IKHWA DIGITAL est une entreprise marocaine faisant partie du groupe IKHWA NETWORK, spécialisée dans le développement web et le marketing digital. Avec plus de 20 ans d'expérience, nous servons des clients au Maroc et à l'international, engagés à fournir des solutions digitales de qualité supérieure.">
-    <meta name="keywords" content="IKHWA DIGITAL, développement web Maroc, marketing digital Maroc, gestion de sites web, conception de sites, IKHWA NETWORK, programmation, SEO, solutions digitales, identité de marque">
-    <meta name="author" content="Équipe IKHWA DIGITAL">
-    <title>IKHWA DIGITAL - Votre Partenaire Idéal pour l'Innovation Digitale</title>
+    
+    <meta name="description" content="Ikhwa Network est une entreprise immobilière marocaine opérant au niveau national et international, mettant à profit son expertise approfondie dans le développement immobilier pour offrir des services premium avec un engagement inébranlable envers la qualité et l'excellence.">
+    <meta name="keywords" content="Ikhwa Network, immobilier marocain, investissement immobilier, projets immobiliers, développement immobilier, Maroc, construction, marketing immobilier">
+    <meta name="author" content="Conseil d'Administration Ikhwa Network">
+    <title>Ikhwa Network | Pionnier de l'Investissement et du Développement Immobilier au Maroc et au-delà</title>
+
+    <!-- Balises Open Graph (pour les réseaux sociaux) -->
+    <meta property="og:title" content="Ikhwa Network | Pionnier de l'Investissement et du Développement Immobilier au Maroc et au-delà">
+    <meta property="og:description" content="Ikhwa Network est un spécialiste immobilier marocain engagé à fournir des services premium et à établir des partenariats stratégiques pour garantir qualité et excellence dans le développement immobilier.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../URL-logo-entreprise-ou-image-projet.jpg">
+    <meta property="og:url" content="https://ikhwanetwork.com">
+
     <link rel="icon" href="../image/white-logo.svg" sizes="32x32"/>
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/ltr_style.css">
 </head>
 <body>
-<!-- Header -->
+<!-- En-tête -->
 <div class="header" id="header">
   <div class="container">
     <!-- Logo -->
-    <a class="logo" href="../index.html">
-      <img src="../image/logo.png" alt="Logo IKHWA DIGITAL" class="logo-img">
+    <a class="logo" href="index.html">
+      <img src="../image/logo.png" alt="Logo IKHWA NETWORK" class="logo-img">
     </a>
 
     <div class="mobile-menu">
-    <!-- links  -->
-      <ul class="main-nav">
+    <!-- Liens de navigation -->
+    <ul class="main-nav">
         <li><a href="index.html" class="nav-home active">Accueil</a></li>
-        <li><a href="index.html#about" class="nav-about">À propos</a></li>
-        <li><a href="index.html#services" class="nav-services">Nos services</a></li>
-        <li><a href="index.html#faq" class="nav-faq">FAQ</a></li>
-        <li><a href="production.html" class="nav-production">Production</a></li>
+        <li><a href="index.html#about" class="nav-about">Notre Entreprise</a></li>
+        <li><a href="index.html#services" class="nav-services">Services</a></li>
         <li><a href="partners.html" class="nav-partners">Partenaires</a></li>
+        <li><a href="jobs.html" class="nav-jobs">Carrières</a></li>
+        <li><a href="index.html#faq" class="nav-faq">FAQ</a></li>
         <li><a href="index.html#contact" class="nav-contact">Contactez-nous</a></li>
-      </ul>
+    </ul>
 
-      <!-- language dropdown -->
+      <!-- Menu déroulant des langues -->
       <div class="lang-dropdown">
         <button class="lang-btn">
           <i class="fa-solid fa-globe"></i>
           <span>Français</span>
         </button>
         <ul class="lang-menu">
-          <li><a href="../index.html">Arabe (AR)</a></li>
-          <li><a href="../en/index.html">Anglais (EN)</a></li>
+          <li><a href="../index.html">Arabic (Ar)</a></li>
+          <li><a href="../en/index.html">English (EN)</a></li>
         </ul>
       </div>
     </div>
@@ -53,293 +63,412 @@
     <i class="fa fa-bars btn-show-nav"></i>
   </div>
 </div>
-<!-- / Header -->
-<!-- Hero -->
+<!-- / En-tête -->
+
+<!-- Section Hero -->
 <div class="hero" id="hero">
     <div class="container">
-        <div class="hero-content">
-            <h2 class="gradient-text">IKHWA DIGITAL</h2>
-            <h1 class="section-description">Construisons ensemble l'espace digital que vous méritez</h1>
-        </div>
-        <div class="statistic">
-            <div class="content">
-                <div class="statistic-item">
-                    <h2>50+</h2>
-                    <p>Projets réalisés</p>
-                </div>
-                <div class="statistic-item">
-                    <h2>20+</h2>
-                    <p>Clients satisfaits</p>
-                </div>
-                <div class="statistic-item">
-                    <h2>4+</h2>
-                    <p>Pays desservis</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- / Hero -->
-<!-- About Us -->
-<div class="about" id="about">
-    <div class="container">
-        <div class="about-content">
-            <h2 class="gradient-text">À propos</h2>
-            <h1 class="section-description">
-                Centre de solutions digitales innovantes
+        <div class="wrapper">
+            <h1>
+            Construire vos maisons de rêve, partenaire de votre vision
             </h1>
             <p>
-                IKHWA DIGITAL est une entreprise marocaine faisant partie du groupe IKHWA NETWORK, spécialisée dans la programmation et la gestion de sites web grâce à une équipe expérimentée dans les technologies de conception et le marketing digital, avec plus de 20 ans d'expertise dans ce domaine.
+                Découvrez des opportunités immobilières qui dépassent les attentes - nous sommes là pour concrétiser votre vision
             </p>
-            <p>
-                Notre expérience nous a permis d'étendre nos opérations au Maroc et à l'international dans plusieurs pays arabes et étrangers. Nous avons relevé le défi du leadership dans le service à nos clients, croyant fermement que notre véritable richesse réside dans la satisfaction de leurs aspirations.
-            </p>
-        </div>
-        <div class="about-image">
-            <img src="../image/about.svg" alt="Image À propos">
+            <a href="index.html#services">Découvrez nos services</a>
         </div>
     </div>
 </div>
-<!-- / About Us -->
-<!-- Start Services -->
-<section class="services-section" id="services">
-    <div class="container">
-        <h2 class="gradient-text">Nos services techniques et marketing</h2>
-        <p class="section-description">
-            Nous fournissons des programmes et plateformes digitaux qui améliorent les stratégies d'information des entreprises et développent leurs opérations commerciales
+<!-- Fin Hero -->
+
+<!-- Section À propos de l'entreprise -->
+<section class="about-company-section" id="about">
+	<div class="container">
+		<div class="about-company-grid">
+			<div class="about-company-image">
+				<img src="../image/about_right.png" alt="Maisons sur des pièces">
+			</div>
+
+			<div class="about-company-content">
+				<h2 class="section-title">À propos de notre entreprise</h2>
+				<p class="section-description">
+                    Ikhwa Network est une entreprise immobilière marocaine opérant au niveau national et international. Nous mettons à profit nos années d'expertise accumulée dans le développement immobilier pour offrir des services premium à nos clients. Notre conseil d'administration travaille continuellement à améliorer les structures de transaction et à renforcer les relations avec nos partenaires stratégiques sur le terrain, garantissant les plus hauts niveaux de savoir-faire, de qualité et d'engagement tout en laissant notre empreinte distinctive sur chaque projet que nous entreprenons.
+                </p>
+
+				<div class="about-company-stats">
+					<div class="stat-item">
+						<span class="stat-number">+250</span>
+						<span class="stat-label">Consultations immobilières</span>
+					</div>
+					<div class="stat-item">
+						<span class="stat-number">100%</span>
+						<span class="stat-label">Orientation qualité</span>
+					</div>
+					<div class="stat-item">
+						<span class="stat-number">+100</span>
+						<span class="stat-label">Partenaires de confiance</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="about-company-image">
+				<img src="../image/about_left.png" alt="Image de poignée de main">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Fin À propos -->
+
+<!-- Section Message du PDG -->
+<div class="ceo-message-section">
+    <div class="dd"></div>
+	<div class="container">
+		<h2 class="section-title">Message du PDG</h2>
+		<p>C'est avec plaisir que je vous souhaite la bienvenue chez Ikhwa Network, l'entreprise marocaine de développement immobilier avec plus de 20 ans d'expérience cumulée.</p>
+		<p>Depuis notre création, nous avons mis en œuvre des politiques fondées sur une expertise scientifique, terrain et managériale, mobilisant toutes nos capacités professionnelles et administratives pour fournir des produits immobiliers premium. Nous assurons à nos clients notre engagement envers chaque accord contractuel.</p>
+        <p>Chez Ikhwa Network, nous reconnaissons notre profonde responsabilité envers notre nation et nos clients. Nous croyons que chaque projet que nous entreprenons n'est pas seulement une transaction mais le début de relations professionnelles bâties sur la confiance, l'engagement et une excellente gestion. Notre expérience a montré que la qualité du produit garantit des retours économiques pour toutes les parties contractantes et renforce notre position sur le marché immobilier concurrentiel.</p>
+        <p>Nous considérons la gestion des affaires et de l'immobilier comme un art nécessitant créativité et innovation, ce qui nous pousse à continuellement développer nos compétences et opérations sur le terrain tout en mettant en œuvre des plans stratégiques qui sécurisent notre position future.</p>
+        <p>Pour conclure, j'exprime ma plus profonde gratitude à nos précieux clients, actionnaires et à tous les membres du conseil pour leur confiance et soutien continu. Un merci spécial à nos équipes terrain - ingénieurs, techniciens et ouvriers - pour leur dévouement à concrétiser notre vision tout en maintenant nos standards de qualité et d'excellence.</p>
+        <p class="ceo-signature">
+            Mohamed Saad Raji
+            <br>
+            Président du Directoire
         </p>
+	</div>
+    <div class="board-message-section">
+	<div class="container">
+		<div class="board-message-box">
+			<h2 class="section-title">Conseil d'Administration : (Gestion éthique & Approche flexible)</h2>
+			<p class="section-description">
+                Les membres du conseil d'Ikhwa Network s'engagent à contribuer à la noble vision de Sa Majesté le Roi Mohammed VI (que Dieu le préserve) en participant au renforcement et au développement de l'économie nationale, particulièrement dans l'immobilier comme moteur clé du développement. Nous nous engageons également à établir des relations client saines, à protéger leurs projets, et à sauvegarder les actifs et investissements de l'entreprise.
+            </p>
+		</div>
+        <img src="../image/ceo/place.png" alt="Réunion du conseil">
+	</div>
+</div>
+</div>
+<!-- Fin Message du PDG -->
 
-        <div class="services-grid">
-            <div class="service-card">
-                <img src="../image/services/branding-icon.png" alt="Identité de marque" class="service-icon">
-                <h4 class="service-title">Identité de marque</h4>
-                <p class="service-description">
-                    Nous garantissons à nos clients une identité digitale complète et des services techniques de haute qualité, de l'idée à la conception graphique
-                </p>
+<!-- Section Stratégie de l'entreprise -->
+<div class="company-strategy-section">
+	<div class="container">
+		<div class="strategy-content">
+			<div class="strategy-text">
+				<h2 class="section-title">Notre Stratégie</h2>
+				<div class="section-description">
+					<p>
+						Notre direction mène des études terrain et recherches continues sur les dynamiques du marché immobilier et les exigences de construction pour développer des stratégies alignées avec les partenaires économiques et créer notre niche distinctive dans les services immobiliers à court et long terme.
+					</p>
+					<p>
+						Notre stratégie repose sur des principes clés incluant :
+					</p>
+				</div>
+				<div class="strategy-principles-grid">
+					<div class="principle-card">
+						<div class="icon">
+                            <img src="../image/strategy/icon1.png" alt="Gestion financière">
+                        </div>
+						<p>Gestion financière précise des projets et initiatives intelligentes</p>
+					</div>
+					<div class="principle-card">
+						<div class="icon">
+                            <img src="../image/strategy/icon2.png" alt="Modèle RH">
+                        </div>
+						<p>Modèle certifié de gestion des ressources humaines</p>
+					</div>
+					<div class="principle-card">
+						<div class="icon">
+                            <img src="../image/strategy/icon4.png" alt="Leadership">
+                        </div>
+						<p>Atteindre le leadership dans les services immobiliers</p>
+					</div>
+					<div class="principle-card">
+						<div class="icon">
+                            <img src="../image/strategy/icon3.png" alt="Développement">
+                        </div>
+						<p>Gestion et développement de propriétés diversifiées</p>
+					</div>
+				</div>
+			</div>
+            <div class="strategy-image">
+				<img src="../image/strategy/company-strategy.png" alt="Plan de construction et propriétés">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Fin Stratégie de l'entreprise -->
+
+<!-- Section Caractéristiques clés -->
+<div class="features-section">
+    <div class="container">
+        <div class="features-header">
+            <h2 class="section-title">Ce qui nous distingue</h2>
+            <p class="section-description">
+                Chez Ikhwa Network, nous croyons que l'immobilier est à la fois un art et un engagement. C'est pourquoi nous offrons des expériences immobilières complètes qui répondent à vos aspirations. Nous garantissons qualité et logement idéal à des coûts satisfaisants, soutenus par une vision claire et une équipe avec une expertise terrain approfondie. Notre expérience fait de nous des leaders du secteur, et nous continuons à innover pour offrir une véritable valeur d'investissement qui améliore la qualité de vie.
+            </p>
+        </div>
+        <div class="features-navigation">
+            <div class="button-next">
+                <i class="fa-solid fa-chevron-right"></i>
             </div>
-
-            <div class="service-card">
-                <img src="../image/services/marketing-icon.png" alt="Marketing" class="service-icon">
-                <h4 class="service-title">Marketing</h4>
-                <p class="service-description">
-                    Nous renforçons votre présence digitale grâce à notre expertise en photographie, production, création de contenu et gestion des réseaux sociaux
-                </p>
-            </div>
-
-            <div class="service-card">
-                <img src="../image/services/app-icon.png" alt="Développement d'applications" class="service-icon">
-                <h4 class="service-title">Développement d'applications</h4>
-                <p class="service-description">
-                    Développement de logiciels et applications mobiles de haute qualité accompagnés de systèmes de sécurité efficaces et de services techniques et administratifs
-                </p>
-            </div>
-
-            <div class="service-card">
-                <img src="../image/services/graphics-icon.png" alt="Photographie & Production" class="service-icon">
-                <h4 class="service-title">Photographie & Production</h4>
-                <p class="service-description">
-                    Nous produisons un contenu visuel professionnel qui reflète vos aspirations avec une qualité élevée, traduisant les désirs du client et répondant aux besoins du public
-                </p>
-            </div>
-
-            <div class="service-card">
-                <img src="../image/services/web-icon.png" alt="Conception et développement de sites web" class="service-icon">
-                <h4 class="service-title">Conception et développement de sites web</h4>
-                <p class="service-description">
-                    Nous concevons et développons des sites web personnalisés avec une gestion complète, des pages de destination aux solutions e-commerce
-                </p>
-            </div>
-
-            <div class="service-card">
-                <img src="../image/services/social-icon.png" alt="Contenu pour réseaux sociaux" class="service-icon">
-                <h4 class="service-title">Contenu pour réseaux sociaux</h4>
-                <p class="service-description">
-                    Nous assurons une présence forte de votre marque sur les plateformes sociales et contribuons à augmenter l'engagement sur vos pages
-                </p>
+            <div class="button-prev">
+                <i class="fa-solid fa-chevron-left"></i> 
             </div>
         </div>
     </div>
-</section>
-<!-- End Services -->
-<!-- Start Why Choose Us -->
-<section class="why-choose-us-section" id="why-choose-us">
     <div class="container">
-        <h2 class="gradient-text">Pourquoi nous choisir ?</h2>
-        <p class="section-description">
-            IKHWA DIGITAL sera le choix optimal pour créer votre contenu digital et augmenter vos transactions commerciales. Nous sommes votre partenaire permanent dans un monde digital en constante évolution
-        </p>
+        <div>
+            <div class="features-swiper swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon">
+                            <img src="../image/features/icon1.png" alt="Vision">
+                        </div>
+                        <h3 class="feature-title">Notre Vision</h3>
+                        <p class="feature-description">Créer une empreinte distinctive sur le marché immobilier et renforcer la confiance des clients dans nos services</p>
+                    </div>
 
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <img src="../image/why_choose_us/team-icon.png" alt="Notre équipe">
-                </div>
-                <div class="feature-content">
-                    <h4 class="feature-title">Notre équipe</h4>
-                    <p class="feature-description">
-                        Une équipe professionnelle ouverte aux compétences locales et internationales
-                    </p>
-                </div>
-            </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon">
+                            <img src="../image/features/icon2.png" alt="Mission">
+                        </div>
+                        <h3 class="feature-title">Notre Mission</h3>
+                        <p class="feature-description">Gérer des projets immobiliers avec des techniques innovantes et des standards mondiaux qui nous positionnent comme leaders du marché.</p>
+                    </div>
 
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <img src="../image/why_choose_us/vision-icon.png" alt="Notre vision">
-                </div>
-                <div class="feature-content">
-                    <h4 class="feature-title">Notre vision</h4>
-                    <p class="feature-description">
-                        Satisfaire nos clients et élargir leurs opérations pour qu'ils deviennent des leaders en marketing
-                    </p>
-                </div>
-            </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon">
+                            <img src="../image/features/icon4.png" alt="Efficacité">
+                        </div>
+                        <h3 class="feature-title">Efficacité</h3>
+                        <p class="feature-description">Garantie par une équipe soudée, hautement expérimentée avec une formation professionnelle continue et des mécanismes opérationnels avancés.</p>
+                    </div>
 
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <img src="../image/why_choose_us/mission-icon.png" alt="Notre mission et valeurs">
-                </div>
-                <div class="feature-content">
-                    <h4 class="feature-title">Notre mission et valeurs</h4>
-                    <p class="feature-description">
-                        Gestion digitale exceptionnelle et professionnelle de vos projets, avec honnêteté et engagement comme base contractuelle
-                    </p>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon">
+                            <img src="../image/features/icon3.png" alt="Valeurs">
+                        </div>
+                        <h3 class="feature-title">Nos Valeurs</h3>
+                        <p class="feature-description">Enracinées dans notre croyance en l'engagement professionnel comme pierre angulaire des contrats clients.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-<!-- End Why Choose Us -->
-<!-- Start Partners -->
+</div>
+<!-- Fin Caractéristiques -->
+
+<!-- Section Services -->
+<div class="our-services-section" id="services">
+    <div class="container">
+        <div class="services-header">
+            <div class="text">
+                <h2 class="section-title">Nos Services</h2>
+                <p class="section-description">
+                    Nous offrons des services complets en investissement immobilier et gestion de propriétés à travers le Maroc
+                </p>
+            </div>
+            <div class="services-navigation">
+                <div class="button-ser-next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="button-ser-prev">
+                    <i class="fa-solid fa-chevron-left"></i> 
+                </div>
+            </div>
+        </div>
+        <!-- Slider Services -->
+        <div class="swiper services-swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide service-card card1">
+                    <div class="service-number">01</div>
+                    <h3 class="service-title">Consultations Immobilières</h3>
+                    <p class="service-description">
+                        Examen des dossiers de propriété, contrats de location, audits d'actifs immobiliers et restructuration de portefeuilles immobiliers.
+                    </p>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide service-card card2">
+                    <img src="../image/services/card2.png" alt="Projets d'investissement">
+                    <div class="service-number">02</div>
+                    <h3 class="service-title">Études de Projets d'Investissement</h3>
+                    <p class="service-description">
+                        Y compris études de marché, études de faisabilité, conceptions architecturales et analyse de la structure financière des projets.
+                    </p>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide service-card card3">
+                    <img src="../image/services/card3.png" alt="Construction">
+                    <div class="service-number">03</div>
+                    <h3 class="service-title">Construction & Développement de Projets</h3>
+                    <p class="service-description">
+                        En coordination avec Karihome (une société Ikhwa Network), nous offrons des services exceptionnels de construction et développement immobilier répondant aux normes de haute qualité tout en respectant pleinement les préférences clients.
+                    </p>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide service-card card4">
+                    <div class="service-number">04</div>
+                    <h3 class="service-title">Marketing Immobilier</h3>
+                    <p class="service-description">
+                        À travers Ikhwa Digital (une filiale d'Ikhwa Network), nous fournissons du marketing digital pour projets immobiliers en créant sites web et plateformes commerciales digitales.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Slider Services -->
+    </div>
+</div>
+<!-- Fin Services -->
+
+<!-- Section Partenaires -->
 <section class="partners-section" id="partners">
     <div class="container">
-        <h3 class="gradient-text">Nos partenaires</h3>
-        <p class="section-description">
-            Ils constituent un véritable soutien pour nous et nos clients. Nous nous efforçons toujours de créer une atmosphère de coopération et d'échange de connaissances pour assurer le succès des projets de nos clients et renforcer leur présence sur le marché commercial
-        </p>
+        <div class="image">
+            <img src="../image/partners/backgound-section.png" alt="Arrière-plan partenaires">
+        </div>
+        <div class="partners-content">
+            <h3 class="section-title">Nos Partenaires</h3>
+            <p class="section-description">
+                Ils nous apportent ainsi qu'à nos clients un soutien authentique. Nous favorisons continuellement des environnements collaboratifs et des échanges de connaissances pour assurer le succès des projets de nos clients et renforcer leur présence dans les transactions commerciales.
+            </p>
 
-        <div class="partners-logos">
-            <div class="partner-logo">
-                <img src="../image/partners/ikhwa_network.png" alt="IKHWA NETWORK">
-            </div>
-            <div class="partner-logo">
-                <img src="../image/partners/ihkwa_invesments.png" alt="IKHWA INVESTMENTS">
-            </div>
-            <div class="partner-logo">
-                <img src="../image/partners/karihome.png" alt="KARIHOME">
-            </div>
-            <div class="partner-logo">
-                <img src="../image/partners/boklite.png" alt="BOKLITE">
-            </div>
-            <div class="partner-logo">
-                <img src="../image/partners/artyads.png" alt="ARTY ADS">
-            </div>
-            <div class="partner-logo">
-                <img src="../image/partners/karilive.png" alt="KARILIVE">
+            <div class="partners-logos">
+                <div class="partner-logo">
+                    <img src="../image/partners/ikhwa_network.png" alt="Ikhwa Network">
+                </div>
+                <div class="partner-logo">
+                    <img src="../image/partners/ihkwa_invesments.png" alt="Ikhwa Investments">
+                </div>
+                <div class="partner-logo">
+                    <img src="../image/partners/karihome.png" alt="Karihome">
+                </div>
+                <div class="partner-logo">
+                    <img src="../image/partners/boklite.png" alt="Boklite">
+                </div>
+                <div class="partner-logo">
+                    <img src="../image/partners/artyads.png" alt="Arty Ads">
+                </div>
+                <div class="partner-logo">
+                    <img src="../image/partners/karilive.png" alt="KariLive">
+                </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End Partners -->
-<!-- Start FAQ -->
+<!-- Fin Partenaires -->
+
+<!-- Section FAQ -->
 <section class="faq-section" id="faq">
     <div class="container">
         <div class="faq-header">
-            <h3 class="gradient-text">Demandes d'information</h3>
-            <h2 class="section-description">Questions fréquemment posées (FAQ)</h2>
+            <h3 class="section-title">Questions Fréquemment Posées</h3>
             <p class="section-subdescription">
-                Nous fournissons des réponses aux questions les plus courantes sur notre entreprise
+                Nous avons compilé les réponses aux questions les plus courantes sur notre entreprise.
             </p>
+            <img src="../image/faq.png" alt="Illustration FAQ">
         </div>
         <div class="faq-content">
-            <!-- FAQ Item -->
+            <!-- Item FAQ -->
             <div class="faq-item active">
                 <div class="faq-question">
-                    <span class="gradient-text faq-number">01</span>
-                    <h4>Qu'est-ce que IKHWA DIGITAL ?</h4>
-                    <i class="fa-solid fa-chevron-up icon-rotate"></i>
+                    <h4>Qu'est-ce qu'Ikhwa Network ?</h4>
+                    <i class="fa-solid fa-plus icon-rotate"></i>
                 </div>
                 <div class="faq-answer">
-                    Une entreprise digitale marocaine créée en 2024, avec une équipe spécialisée en technologie et design pour comprendre le paysage commercial et fournir des solutions logicielles et marketing personnalisées. Nous proposons des systèmes et produits intelligents qui aident les entreprises à rationaliser leurs opérations et à améliorer leurs stratégies digitales alignées sur leurs objectifs.
+                    Ikhwa Network est une société d'investissement immobilier opérant à Meknes, la capitale ismaélienne, établie en 2023.
                 </div>
             </div>
-            <!-- FAQ Item -->
+            <!-- Item FAQ -->
             <div class="faq-item">
                 <div class="faq-question">
-                    <span class="gradient-text faq-number">02</span>
-                    <h4>Quelle est la forme juridique et le nom légal de l'entreprise ?</h4>
-                    <i class="fa-solid fa-chevron-up icon-rotate"></i>
+                    <h4>Quelle est la structure légale et le nom de l'entreprise ?</h4>
+                    <i class="fa-solid fa-plus icon-rotate"></i>
                 </div>
                 <div class="faq-answer">
-                    L'entreprise est une société à responsabilité limitée (SARL) avec le nom légal IKHWA DIGITAL BY IKHWA NETWORK.
+                    L'entreprise est une société à responsabilité limitée multi-associés enregistrée au Tribunal de Commerce de Meknes sous le numéro 59287, avec le nom légal officiel IKHWA NETWORK SARL.
                 </div>
             </div>
-            <!-- FAQ Item -->
+            <!-- Item FAQ -->
             <div class="faq-item">
                 <div class="faq-question">
-                    <span class="gradient-text faq-number">03</span>
-                    <h4>Quelles sont les adresses officielles de l'entreprise ?</h4>
-                    <i class="fa-solid fa-chevron-up icon-rotate"></i>
+                    <h4>Qui représente légalement Ikhwa Network ?</h4>
+                    <i class="fa-solid fa-plus icon-rotate"></i>
                 </div>
                 <div class="faq-answer">
-                    IKHWA DIGITAL est située à :<br>
-                    À Kénitra : Intersection entre la rue Ahmed Shawky et la rue Mohamed Gharnit, Bloc C, Bureau n°7<br>
-                    À Meknès : Bureau de représentation à la Villa n°194, Riyad Toulal
+                    Le représentant légal est M. Mohamed Saad Raji, autorisé par le conseil d'administration.
                 </div>
             </div>
-            <!-- FAQ Item -->
+            <!-- Item FAQ -->
             <div class="faq-item">
                 <div class="faq-question">
-                    <span class="gradient-text faq-number">04</span>
-                    <h4>Qui est le représentant légal de l'entreprise ?</h4>
-                    <i class="fa-solid fa-chevron-up icon-rotate"></i>
+                    <h4>Où se situe Ikhwa Network ?</h4>
+                    <i class="fa-solid fa-plus icon-rotate"></i>
                 </div>
                 <div class="faq-answer">
-                    L'entreprise est représentée par M. Mohamed Saad Al-Raji.
+                    Ikhwa Network a son siège social à Meknes à la Villa 194, Riyad Toulal No. 1.
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End FAQ -->
-<!-- Start Contact -->
+<!-- Fin FAQ -->
+
+<!-- Section Formulaire de Contact -->
 <section class="contact-section" id="contact">
     <div class="container">
-        <div class="faq-header">
-            <h3 class="gradient-text">Contactez-nous</h3>
+        <div class="contact-header">
+            <h3 class="section-title">Informations de Contact</h3>
             <p class="section-description">
-                Pour plus d'informations sur nos services et produits ou pour soumettre une réclamation, veuillez nous contacter en remplissant le formulaire
+                Pour plus d'informations sur nos services et produits ou pour soumettre une réclamation, veuillez nous contacter en remplissant le formulaire suivant.
             </p>
         </div>
 
         <div class="contact-content">
             <div class="contact-form">
                 <form>
-                    <div class="mb-3">
+                    <div class="form-row">
+                        <div class="mb-3">
+                        <label for="name" class="form-label">Nom</label>
                         <input type="text" class="form-control" id="name" placeholder="Nom">
-                    </div>
-                      <div class="mb-3">
-                        <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
                     </div>
                     <div class="mb-3">
+                        <label for="phone" class="form-label">Numéro de téléphone</label>
                         <input type="text" class="form-control" id="phone" placeholder="Numéro de téléphone">
                     </div>
-                    <div class="mb-3 file-upload" for="file">
-                        <label for="file">
-                            <i class="fa-solid fa-file"></i>
-                            Veuillez joindre un fichier (max 2MB) dans l'un de ces formats : .jpg, .jpeg, .png, .pdf, .xlsx, .docx
-                        </label>
-                        <input class="form-control" type="file" id="file">
+                    <div class="mb-3 file-upload">
+                        <label for="file" class="form-label">Fichier</label>
+                        <div class="file-upload-content">
+                            <label for="file" class="file-upload-label">
+                                <i class="fa-solid fa-file"></i>
+                                Veuillez joindre un fichier (max 2MB) dans l'un de ces formats : .jpg, .jpeg, .png, .pdf, .xlsx, .docx
+                            </label>
+                            <input class="form-control" type="file" id="file">
+                        </div>
                     </div>
                     <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
                         <textarea class="form-control" id="description" rows="3" placeholder="Description"></textarea>
-                        </div>         
+                    </div>         
                     <div class="contact-options">
                         <div class="form-check">
                             <label class="form-check-label custom-radio" for="radio1">
                                 <input class="form-check-input" type="radio" id="radio1" name="1">
                                 <span class="checkmark"></span>
                             </label>
-                            <label for="radio1">Demande d'information</label>
+                            <label for="radio1">Demande</label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label custom-radio" for="radio2">
@@ -359,63 +488,67 @@
                     <button type="submit" class="submit-btn">Envoyer</button>
                 </form>
             </div>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fa-solid fa-phone"></i>
-                    <div class="contact-text">
-                        <h5 class="fw-semibold">Téléphone</h5>
-                        <p>+96654775155</p>
-                    </div>
+             <div class="contact-info">
+                <div class="info-item">
+                    <strong class="info-label">Numéro de téléphone</strong>
+                    <p class="info-value fw-semibold">00212663806725</p>
                 </div>
-
-                <div class="contact-item">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <div class="contact-text">
-                        <h5 class="fw-semibold">WhatsApp</h5>
-                        <p>+96654775155</p>
-                    </div>
+                <div class="info-item">
+                    <strong class="info-label">Email</strong>
+                    <p class="info-value">contact@ikhwanetwork.com</p>
                 </div>
-
-                <div class="contact-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div class="contact-text">
-                        <h5 class="fw-semibold">Email</h5>
-                        <p>Example@email.com</p>
-                    </div>
+                
+                <div class="info-item">
+                    <strong class="info-label">Adresse</strong>
+                    <p class="info-value">Villa 194, Riyad Toulal, Meknès 50040</p>
+                </div>
+                <div class="info-item">
+                    <strong class="info-label">Heures d'ouverture</strong>
+                    <p class="info-value">
+                        Lundi à vendredi : 8h00 à 17h00
+                        <br />
+                        Samedi : 8h00 à 13h00
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End Contact -->
-<!-- Start Map -->
-<section class="map-section">
+<!-- Fin Formulaire de Contact -->
+
+<!-- Section Newsletter -->
+<section class="newsletter-section">
     <div class="container">
-        <div class="map-header">
-            <h3 class="gradient-text">Notre localisation</h3>
-            <p class="section-description">
-                Notre siège social est indiqué sur la carte suivante
+        <div class="newsletter-content">
+            <h3 class="newsletter-title">Restez Informé</h3>
+            <p class="newsletter-description">
+                Soyez le premier à connaître nos dernières actualités, articles, nouveaux projets et offres exclusives d'Ikhwa Network.
             </p>
         </div>
-        <div id="map"></div>
+        <form>
+            <div class="input-row">
+                <input type="text" class="form-control" id="newsletter" placeholder="Entrez votre email">
+            </div>
+            <button type="submit" class="newsletter-button">S'abonner</button>
+        </form>
     </div>
 </section>
-<!-- End Map -->
-<!-- Footer -->
+<!-- Fin Newsletter -->
+
+<!-- Pied de page -->
 <footer>
-    <!-- <div class="overlay"></div> -->
+    <a href="index.html#hero">
+        <i class="fa-solid fa-chevron-up btn-top"></i>
+    </a>
     <div class="container">
         <div class="footer-column">
-            <img src="../image/white-logo.svg" alt="Logo IKHWA DIGITAL" class="logo">
+            <img src="../image/white-logo.svg" alt="Logo IKHWA NETWORK" class="logo">
         </div>
         <div class="footer-column">
             <h3>Informations sur l'entreprise</h3>
             <div class="text">
                 <p>
-                    IKHWA DIGITAL est une entreprise marocaine faisant partie du groupe IKHWA NETWORK, spécialisée dans la programmation et la gestion de sites web grâce à une équipe expérimentée dans les technologies de conception et le marketing digital, avec plus de 20 ans d'expertise dans ce domaine.
-                </p>
-                <p>
-                    Notre expérience nous a permis d'étendre nos opérations au Maroc et à l'international dans plusieurs pays, en relevant le défi du leadership dans le service à nos clients tout en croyant fermement que notre véritable richesse réside dans la satisfaction de leurs aspirations.
+                    Ikhwa Network est une entreprise immobilière marocaine opérant au niveau national et international, mettant à profit ses années d'expertise accumulée dans le développement immobilier pour offrir des services premium. Notre conseil d'administration travaille continuellement à améliorer les structures de transaction et à renforcer les relations avec nos partenaires stratégiques sur le terrain, garantissant les plus hauts niveaux de savoir-faire, de qualité et d'engagement tout en laissant notre empreinte distinctive sur chaque projet.
                 </p>
             </div>
         </div>
@@ -423,11 +556,11 @@
             <h3>Liens rapides</h3>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="index.html#about">À propos</a></li>
-                <li><a href="index.html#contact">Contactez-nous</a></li>
-                <li><a href="index.html#services">Nos services</a></li>
+                <li><a href="index.html#about">Notre Entreprise</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="jobs.html">Carrières</a></li>
                 <li><a href="index.html#faq">FAQ</a></li>
-                <li><a href="production.html">Production</a></li>
+                <li><a href="index.html#contact">Contactez-nous</a></li>
             </ul>
         </div>
         <div class="footer-column">
@@ -435,7 +568,7 @@
             <ul>
                 <li><a href="terms_and_conditions.html">Conditions générales</a></li>
                 <li><a href="privacy_policy.html">Politique de confidentialité</a></li>
-                <li><a href="partners.html">Nos partenaires</a></li>
+                <li><a href="partners.html">Nos Partenaires</a></li>
             </ul>
         </div>
         <div class="footer-column">
@@ -450,37 +583,80 @@
             </ul>
         </div>
     </div>
+</footer>
+<div class="copy-right">
     <div class="container">
         <div class="footer-bottom">
-            <a href="#" class="downloads">Télécharger le logo et catalogue</a>
-            <p class="copyright">
-                Tous droits réservés à IKHWA DIGITAL BY IKHWA NETWORK SARL ©   
+            <a href="#" class="downloads">
+                <i class="fa-solid fa-download"></i> 
+                Télécharger Logo & Catalogue 
+            </a>
+            <p>
+                Tous droits réservés © IKHWA NETWORK SARL   
             </p>
         </div>
     </div>
-</footer>
-<!-- / Footer -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKBA_O21juKLxLqolMv58TEbCK-q1tuB0&callback=initializeMap" async defer></script>
-<script>
-    function initializeMap() {
-        const options = {
-            zoom: 16,
-            center: { lat: 33.894917, lng: -5.595111 },
-        };
+</div>
+<!-- / Pied de page -->
 
-        const map = new google.maps.Map(document.getElementById('map'), options);
-        const marker = new google.maps.Marker({
-            position: { lat: 33.894917, lng: -5.595111 },
-            map: map,
-        });
-    }
-</script>
-<!-- Load jQuery first -->
+<!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Load Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.features-swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    grabCursor: true,
+
+    navigation: {
+      nextEl: '.button-next',
+      prevEl: '.button-prev',
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.services-swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    grabCursor: true,
+
+    navigation: {
+      nextEl: '.button-ser-next',
+      prevEl: '.button-ser-prev',
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+
+});
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
@@ -495,6 +671,6 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
         });
     });
 </script>
-<script src="../js/main.js"></script>
+
 </body>
 </html>

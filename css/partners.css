@@ -55,8 +55,9 @@
 ==========================
 */
 .company-slider-section {
-    margin-bottom: 300px;
+    margin-bottom: 100px;
     position: relative;
+    margin-top: 60px;
 }
 
 /* Pagination Container */
@@ -147,7 +148,6 @@
     background-image: url("../image/parnters-page/paginate/karilive.svg");
 }
 
-.company-slider-section .swiper-wrapper {}
 .company-slider-section .swiper-slide {
     background-size: cover;
     background-position: center;
@@ -179,7 +179,6 @@
 .company-slider-section .swiper-slide.karilive {
     background-image: url("../image/parnters-page/bg/karilive.png");
 }
-.company-slider-section .container {}
 .company-slider-section .slide-content {
     display: flex;
     justify-content: space-around;
@@ -198,10 +197,6 @@
     align-items: center;
     border-radius: 5px;
 }
-.company-slider-section .slide-image img {}
-.company-slider-section .slide-text {}
-.company-slider-section .company-logo-icon {}
-.company-slider-section .company-logo-icon img {}
 .company-slider-section .company-title {
     color: var(--White);
     font-size: 32px;
@@ -223,9 +218,6 @@
     text-align: center;
     font-size: 18px;
 }
-.company-slider-section .swiper-button-prev {}
-.company-slider-section .swiper-button-next {}
-.company-slider-section .swiper-pagination {}
 
 /* Media Queries */
 /* 768px */

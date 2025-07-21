@@ -2,7 +2,8 @@
 =====================
 ==== Start Hero =====
 =====================
-*/.hero {
+*/
+.hero {
     background-image: url("../image/hero.png");
     background-size: cover;
     background-position: center;
@@ -229,15 +230,10 @@
 */
 
 .ceo-message-section {
-    background-image: url("../image/ceo/section-background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: rgba(246, 250, 255, 1);
     padding: 40px 0 165px;
     margin: 60px 0;
 }
-
-.ceo-message-section .section-title {}
 
 .ceo-message-section p {
     font-size: 17px;
