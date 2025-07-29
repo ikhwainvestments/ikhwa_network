@@ -45,6 +45,7 @@ html {
 body {
     font-family: var(--Font);
     direction: rtl;
+    overflow-x: hidden;
 }
 
 a {

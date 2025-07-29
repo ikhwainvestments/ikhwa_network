@@ -4,7 +4,7 @@
 =====================
 */
 .hero {
-    background-image: url("../image/hero.png");
+    background-image: url("../image/hero.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -240,7 +240,7 @@
 }
 
 .board-message-section {
-    background-image: url("../image/ceo/board.png");
+    background-image: url("../image/ceo/board.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -409,7 +409,7 @@
 ================================
 */
 .features-section {
-    background-image: url("../image/features/section-background.png");
+    background-image: url("../image/features/section-background.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -542,7 +542,7 @@
 }
 
 .our-services-section .service-card.card1{
-    background-image: url("../image/services/card1.png");
+    background-image: url("../image/services/card1.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -557,7 +557,7 @@
 }
 
 .our-services-section .service-card.card4{
-    background-image: url("../image/services/card4.png");
+    background-image: url("../image/services/card4.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -650,7 +650,7 @@
 .faq-section {
     margin: 0;
     padding: 40px 0;
-    background-image: url("../image/faq-background.png");
+    background-image: url("../image/faq-background.webp");
     background-size: 115%;
     background-position: center;
     background-repeat: no-repeat;
@@ -812,7 +812,7 @@
     background-color: #eee;
     margin: 0;
     padding: 80px 0;
-    background-image: url("../image/ContactInfo.png");
+    background-image: url("../image/ContactInfo.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -894,26 +894,36 @@
     border: 2px solid var(--Primary);
     outline: none;
 }
-.contact-section .contact-content .contact-form form input[type="file"] {
-    display: none;
+.contact-section .dropzone {
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    background: #f8f9fa;
 }
 
-.contact-section .contact-content .contact-form form .file-upload .file-upload-label {
-    width: 100%;
-    border-radius: 6px;
-    border: 2px solid #dee2e6;
-    padding: 16px 50px;
-    font-size: 11px;
-    color: var(--Paragraph);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-direction: column;
-}
-
-.contact-section .contact-content .contact-form form .file-upload .file-upload-label i {
+.contact-section .dropzone .dz-message i {
     font-size: 24px;
+    color: #6c757d;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.contact-section .dropzone .dz-message span {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.contact-section .dropzone .dz-preview .dz-filename span {
+    display: inline-block;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contact-section .dropzone .dz-preview .dz-error-message {
+    top: 140px;
 }
 
 .contact-section .contact-content .contact-form .contact-options .form-check {
